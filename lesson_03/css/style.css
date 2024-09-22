@@ -44,7 +44,6 @@ a{
  }
 
 
-
 .number-list>.item{
     color:rgb(199, 187, 15);
 }
@@ -54,7 +53,10 @@ a{
    color:rgb(105, 159, 240);
 }
 
-
 .img+p{
     color:rgb(232, 56, 182);
 } 
+
+.mail.item{
+    color:rgb(68, 116, 113);
+}
