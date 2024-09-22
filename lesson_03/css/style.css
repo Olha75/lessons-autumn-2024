@@ -1,0 +1,60 @@
+@import url("reset.css");
+
+*{
+    color:blueviolet;
+}
+
+
+
+
+/* Приклад забороненого закляття
+*{
+    color:rgb(226, 43, 43) !important;
+} */
+
+
+
+
+h2{
+    color:rgb(3, 3, 103);
+}
+
+.item{
+    color:rgb(6, 85, 19);
+}
+
+#false-imagination{
+    color: #000;
+}
+
+a{
+    color:red;
+}
+
+.contact a{
+    color:aqua;
+}
+
+.list .item{
+   color:rgb(70, 176, 84); 
+}
+
+[class*="ubti"]{
+    color:rgb(28, 125, 41); 
+ }
+
+
+
+.number-list>.item{
+    color:rgb(199, 187, 15);
+}
+
+.text-title~p,
+.part-2 .mail{
+   color:rgb(105, 159, 240);
+}
+
+
+.img+p{
+    color:rgb(232, 56, 182);
+} 
