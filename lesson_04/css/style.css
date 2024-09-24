@@ -1,13 +1,10 @@
-/* через сайт fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
-
 /* через плагін */
 @import url('https://fonts.googleapis.com/css?family=Halant:300,regular,500,600,700');
+
+/* через покращенний плагін */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
 
 
 /* через файл */
@@ -32,7 +29,7 @@ li{
 }
 
 h1{
-    font-family: "Baloo Bhaina", sans-serif;
+    font-family: "Baloo Bhaina 2", sans-serif;
     /* це декоративний шрифт, але так писати неможна, тому sans-serif */
     
     font-weight: 600;
@@ -68,6 +65,10 @@ p span{
     text-shadow: 8px 5px 2px rgba(216, 112, 147, 0.518);
 }
 
+.next-font{
+    font-family: "Carattere", cursive;
+}
+
 p a{
     text-decoration: underline;
     text-decoration-color: blue;
@@ -77,6 +78,49 @@ p a{
     letter-spacing: 2px;
 }
 
+.jost-list li{
+    font-family: 'Jost', sans-serif;
+    text-shadow: none;
+    color: #635f89;
+}
+
+
+.item-16, .item-18{
+    font-weight: 100;
+}
+
+.item-2, .item-10{
+    font-weight: 200;
+}
+
+.item-1, .item-3{
+    font-weight: 300;
+}
+
+.item-9, .item-15{
+    font-weight: 500;
+}
+
+.item-5, .item-17{
+    font-weight: 600;
+}
+
+.item-7, .item-13{
+    font-weight: 700;
+}
+
+.item-4, .item-8{
+    font-weight: 800;
+}
+
+.item-12, .item-14{
+    font-weight: 900;
+}
+
+.item-1, .item-4, .item-7, .item-9, .item-10,
+.item-11, .item-14, .item-17, .item-18{
+    font-style: italic;
+}
 
 /* ----------ДЗ   Макет 1----------  */
 
