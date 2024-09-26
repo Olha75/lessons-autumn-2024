@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap");
+
+/* 
+@import url("fonts.css"); */
+
+@import url("reset.css");
+
+
+
+/* ----------Практика---------- */
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    max-width: 1920px;
+}
+
+.main-menu{
+    padding: 35px;
+    color:#122eae;
+}
+.part-1{
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1{
+    color:#122eae; 
+    font-size: 40px;
+    text-align: center;
+    margin-block-end: 15px;
+}
+.part-1 h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.list-paddings{
+ margin-block-end: 50px;
+ font-size: 0;
+}
+.pad{
+    color: #3b950e;
+}
+
+.marg{
+    color:#d26207
+}
+.paddings{
+    background-color: #122eae;
+    color: #FFF;
+    padding: 15px;
+}
+.list-paddings li{
+    background-color: #c9e354;
+    /* width: 1000px; */
+    margin: 10px;
+    display: inline-block;
+    font-size: 12px;
+
+}
+
+.padding-item-1{
+    padding: 15px;
+    margin: 15px;
+}
+
+.padding-item-2{
+    padding: 15px 15px;
+    margin: 15px 15px;
+}
+
+.padding-item-3{
+    padding: 15px 15px;
+    margin: 15px 15px 15px;
+}
+
+.padding-item-4{
+    padding: 15px 15px 15px 15px;
+    margin: 15px 15px 15px 15px;
+}
+
+.padding-item-5{
+    padding-inline: 15px;
+    padding-block:15px;
+    margin-inline: 15px;
+    margin-block:15px;
+}
+
+.padding-item-6{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.padding-item-7{
+    padding-block-start: 15px;
+    padding-block-end: 15px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    margin-inline-end: 15px;
+    margin-inline-start: 15px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
+}
+
+.padding-item-8{
+    padding-block-start: 15px;
+    padding-inline: 15px;
+    padding-bottom: 15px;
+    margin-inline-end: 15px;
+    margin-left: 15px;
+    margin-block: 15px;
+}
+
+.cube{
+    background-color: #6F7CB2;
+    text-align: center;
+    padding: 30px;
+    margin-block-end: 25px;
+    vertical-align:middle;
+}
+
+.cube-1{
+    /* max-width: 200px; */
+    max-inline-size:200px;
+}
+
+.cube-2{
+    /* min-width: 200px; */
+    min-inline-size:200px;
+}
+
+.cube-3{
+    /* width: 200px; */
+    inline-size: 200px;
+}
+
+.cube-4{
+    /* max-height: 100px; */
+    max-block-size:100px;
+}
+
+.cube-5{
+    /* min-width: 100px; */
+    min-block-size:100px;
+}
+
+.cube-6{
+    /* width: 100px; */
+    block-size: 100px;
+}
+
+.list-cube{
+    margin-block-end: 50px;
+}
+
+.figure{
+    background-color: #c9e354;
+    color:#141414;
+    width: 300px;
+}
+
+.figure-1{
+    box-sizing: content-box;
+    padding: 50px;
+    margin: 50px;
+    margin-inline: auto;
+}
+
+.figure-2{
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 50px;
+    margin: 0 auto;
+}
+
+.list-display{
+    margin-top: 50px;
+}
+
+
+
+.variant-display{
+    background-color: aqua;
+    padding: 25px;
+    margin: 15px;
+    color: #2a300c;
+    inline-size: 300px;
+}
+
+.variant-display.block{
+    display: block;
+}
+
+.visible{
+    overflow: visible;
+}
+
+
+
+.block.hidden{
+    overflow: hidden;
+}
+
+/* не розумію, чого ця картинка відображається, хоча утановка hidden */
+.img-hid{
+    overflow: hidden;
+}
+
+.scroll{
+    overflow: scroll;
+}
+
+
+.auto{
+    overflow: auto;
+}
+
+
+.inline{
+    display: inline;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+
+/* цей блок зараз в браузері не відображається */
+.none{
+    display: none;
+}
+
+
+/* ----------Макет 1---------- */
+
+.part-2{
+    /* width: 1920px; */
+    background-color:#141414;
+    margin: 0 auto;
+}
+
+
+#dark-theme-website{
+    font-family: Manrope;
+    padding-block:75px 150px;
+    padding-inline: 15px;
+    background-color: #141414;
+    max-width: 1597px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    width:100%;
+}
+
+
+
+.title-dtw{
+    color:  #FFF;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-block-end: 14px;
+    max-width:1297px;
+}
+
+.title-dtw+p{
+    color: #999;
+    font-size: 18px;
+    line-height: 1.5; 
+    margin-block-end: 80px;
+    max-width:1297px;
+}
+
+.section{
+    margin: 0 auto;
+ }
+
+.items{
+    margin-inline: -15px;
+    font-size: 0;
+}
+
+.item{
+    width: 33.333%;
+    display: inline-block;
+    margin-block-end:30px;
+    padding-inline: 15px;
+    font-size: 18px;
+}
+
+.content{
+    background-color: rgb(60, 24, 24);
+    padding: 50px;
+}
+
+/* .item.minus{
+    margin-inline-end: 0px;
+}*/
+
+.item.minus-b,
+.elements.item-1-3, 
+.elements.item-1-4{
+    margin-block-end: 0px;
+} 
+
+.section h3{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5 /* 36px */;
+    display: inline-block;
+    vertical-align: middle;
+    margin-block-end: 48px;
+}
+
+.content p{
+    color: #999;
+    line-height: 1.5; /* 27px */
+}
+
+.content img{
+    margin-inline-end:32px;
+    max-width: 72px;
+    max-height: 72px;
+    min-width: 19px;
+}
+
+
+/*---------- Дз Макет 2 -----------*/
+
+/* .part-3, .part-4{
+    margin: 0 auto;
+} */
+
+.model-3{
+    max-width: 649px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    padding-block: 55px 105px;
+    padding-inline: 55px;
+}
+
+.title-lpt, 
+.title-lpt-2{
+    color:#091133;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.32 /* 132% */;
+    letter-spacing: 1px; 
+    text-transform: capitalize;   
+    margin-block-end: 20px; 
+}
+
+.title-lpt~p{
+    color: #505F98;
+    line-height: 1.66667; /* 166.667% */
+}
+
+.title-lpt+p{
+    margin-block-end: 16px;
+}
+
+p+p{
+    margin-block-end: 69px;
+}
+
+.buttons{
+    font-size: 0;
+}
+
+.button-1,
+.button-2{
+    min-width: 189px;
+    max-width: 189px;
+    background-color:#111B47;   
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0;
+}
+
+.button-1{
+    margin-inline-end: 30px;
+}
+
+.button-1,
+.button-2,
+.content-area h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+    text-transform: capitalize;
+    color:#FFF;
+}
+
+
+
+/* ----------Макет 3----------- */
+/* .part-4{
+  
+} */
+
+.model-4{
+    max-width: 520px;
+    margin: 0 auto;
+    padding-block: 50px 100px;
+    padding-inline: 50px;
+}
+
+.title-lpt-2{
+    font-size: 36px;
+    line-height:1.33333 /* 133.333% */;
+    margin-block-end: 16px;
+    
+}
+
+.title-lpt-2~p{
+color: #6F7CB2;
+line-height: 1.625; /* 162.5% */;
+}
+
+
+.title-lpt-2 +p{
+    margin-block-end: 10px;
+}
+
+.last-p{
+    margin-block-end: 70px;
+}
+
+.content-area h4{
+    color: #091133;
+    margin-block-end: 6px;
+}
+
+.content-area p{
+    color: #5D6970;
+    font-size: 12px;
+    line-height: 1.5; /* 150% */
+}
+
+.content-area img{
+width: 36px;
+margin-block-end: 14px;
+}
+
+.items-1{
+ /* display: inline-block; */
+ font-size: 0;
+ margin-inline: -15px;
+}
+
+.elements{
+    /* max-width:209px; */
+    width: 50%;
+    display: inline-block;
+    margin-block-end:32px;
+    padding-inline: 15px;
+    /* font-size: 12px; */
+}
+
+
+.footer{
+    padding: 15px;
+    text-align: center;
+    background-color: #5D6970;
+}
+
+.footer a{
+    color:#dddbec;
+    font-size: 14px;
+    text-transform: uppercase;
+}

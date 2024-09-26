@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>lesson_05</title>
+	</head>
+	<body>
+		<header>
+			<div class="main-menu">
+				<img src="img/logo.jpg" alt="logo" id="logo">
+				<ul>
+					<li><a href="#practice">Практика</a></li>
+					<li><a href="#dark-theme-website">Д/з Макет №1 "DarkThemeWebsite" </a></li>
+					<li><a href="#landing-page-template-1">Д/з Макет №2 "LandingPageTemplate" ч.1</a></li>
+					<li><a href="#landing-page-template-2">Д/з Макет №3 "LandingPageTemplate" ч.2</a></li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div>
+				<div id="practice" class="part-1">
+					<h1 class="title-practice">Властивості блоків, відступи між елементами margin та padding</h1>
+					<div class="paddings">
+						<h2>Візуально однаковові блоки (крім наповнення контентом), але різні записи<br>також прибрані фантомні відступи</h2>
+						<ol class="list-paddings">
+							<li><div class="padding-item-1"><span class="pad">padding: 15px </span><span class="marg">margin: 15px</span></div></li>
+							<li><div class="padding-item-2"><span class="pad">padding: 15px 15px </span><span class="marg">margin: 15px 15px</span></div></li>
+							<li><div class="padding-item-3"><span class="pad">padding: 15px 15px 15px </span><span class="marg">margin: 15px 15px 15px</span></div></li>
+							<li><div class="padding-item-4"><span class="pad">padding: 15px 15px 15px 15px </span><span class="marg">margin: 15px 15px 15px 15px</span></div></li>
+							<li><div class="padding-item-5"><span class="pad">padding-inline:15px;  padding-block:15px; </span><span class="marg">margin-inline:15px;  margin-block:15px;</span></div></li>
+							<li><div class="padding-item-6"><span class="pad">padding-top: 15px; padding-bottom: 15px; padding-left: 15px; padding-right: 15px; </span>
+								<span class="marg">margin-top: 15px; margin-bottom: 15px; margin-left: 15px; margin-right: 15px;</span></div></li>
+							<li><div class="padding-item-7"><span class="pad">padding-block-start: 15px;
+								padding-block-end: 15px;
+								padding-inline-start: 15px;
+								padding-inline-end: 15px; </span><span class="marg">
+									margin-inline-end: 15px;
+									margin-inline-start: 15px;
+									margin-block-end: 15px;
+									margin-block-start: 15px;
+							</span></div></li>
+							<li><div class="padding-item-8"><span class="pad">або мікс, наприклад: padding-block-start: 15px;
+								padding-inline: 15px;
+								padding-bottom: 15px; </span><span class="marg">
+									margin-inline-end: 15px;
+									margin-left: 15px;
+									margin-block: 15px;
+							</span></div></li>
+						</ol>
+						<h2>Поведінка блоків при використанні різних стилів по ширині та висоті</h2>
+						<ul class="list-cube">
+							<li><div class="cube cube-1">max-with: 200px  або max-inline-size</div></li>
+							<li><div class="cube cube-2">min-with: 200px або  min-inline-size:200px</div></li>
+							<li><div class="cube cube-3">with: 200px або inline-size:200px</div></li>
+							<li><div class="cube cube-4">max-height: 100px  або max-block-size:100px </div></li>
+							<li><div class="cube cube-5">min-height: 100px або  min-block-size:100px</div></li>
+							<li><div class="cube cube-6">height: 100px або block-size:100px</div></li>
+						</ul>
+						<h2>Однакові прямокутникі, разниця тільки у властивості box-sizing<br>фігури відцентровані властивістю margin: 0 auto та її аналогом</h2>
+						<div class="figure figure-1">content-box</div>
+						<div class="figure figure-2">border-box</div>
+						<div class="list-display">
+							<h2>Властивості display та overflow</h2>
+							<div class="variant-display block visible">1 block, visible
+								<img src="img/ball.jpg" alt="куля">
+							</div>
+							<div class="variant-display block hidden">2 block, hidden<img src="img/ball.jpg" alt="куля" class="img-hid"></div>
+							<div class="variant-display block scroll">3 block, scroll<img src="img/ball.jpg" alt="куля"> </div>
+							<div class="variant-display block auto">4 block, auto<img src="img/ball.jpg" alt="куля"></div>
+							<div class="variant-display block">5 block<img src="img/ball.jpg" alt="куля"></div>
+							<div class="variant-display inline">6 inline</div>
+							<div class="variant-display none">8 none</div>
+							<div class="variant-display inline-block">7 inline-block</div>
+							
+						</div>
+
+					</div>
+					
+				</div>				
+				<div class="part-2">
+					<div id="dark-theme-website" class="model-0">
+						<h2 class="title-dtw">We Provide you streaming experience across various devices.</h2>
+						<p>With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.</p>
+						<div class="section">
+							<div class="items">
+								<div class="item">
+									<div class="content">
+										<img src="img/telefon.jpg" alt="смартфон">
+										<h3>Smartphones</h3>
+										<p>
+										StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="img/tablet.jpg" alt="планшет">
+										<h3>Tablet</h3>
+										<p>
+										StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+										</p>
+									</div>
+								</div>
+								<div class="item minus">
+									<div class="content">
+										<img src="img/smart_tv.jpg" alt="смарт ТВ">
+										<h3>Smart TV</h3>
+										<p>
+										StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+										</p>
+									</div>
+								</div>
+								<div class="item minus-b">
+									<div class="content">
+										<img src="img/laptops.jpg" alt="ноутбук">
+										<h3>Laptops</h3>
+										<p>
+										StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+										</p>
+									</div>
+								</div>
+								<div class="item minus-b">
+									<div class="content">
+										<img src="img/gaming_consoles.jpg" alt="ігрова консоль">
+										<h3>Gaming Consoles</h3>
+										<p>
+										StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+										</p>
+									</div>
+								</div>
+								<div class="item minus minus-b">
+									<div class="content">
+										<img src="img/telefon.jpg" alt="смартфон">
+										<h3>VR Headsets </h3>
+										<p>
+										StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="part-3">
+					<div id="landing-page-template-1" class="model-3">
+						<h2 class="title-lpt"> Introduce Your Product Quickly & Effectively</h2>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+						<p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+						<div class="buttons">
+							
+								<a href="#" class="button-1">Purchase UI Kit</a>
+							
+							
+								<a href="#" class="button-2">Learn More</a>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="part-4">
+					<div id="landing-page-template-2" class="model-4">
+						<h2 class="title-lpt-2">Design & Build Your Own Landing Pages</h2>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+						<p class="last-p">mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+						<div class=items-1>
+							<div class="elements item-1-1">
+								<div class="content-area">
+									<img src="img/icon-abstract.jpg" alt="абстракна картинка креслення">
+									<h4>Title Goes Here</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+								</div>
+							</div>
+							<div class="elements item-1-2">
+								<div class="content-area">
+									<img src="img/icon-abstract.jpg" alt="абстракна картинка креслення">
+									<h4>Title Goes Here</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+								</div>
+							</div>
+							<div class="elements item-1-3">
+								<div class="content-area">
+									<img src="img/icon-abstract.jpg" alt="абстракна картинка креслення">
+									<h4>Title Goes Here</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+								</div>
+							</div>
+							<div class="elements item-1-4">
+								<div class="content-area">
+									<img src="img/icon-abstract.jpg" alt="абстракна картинка креслення">
+									<h4>Title Goes Here</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+		<footer>
+			<div id="footer" class="footer">
+				<a href="#logo">Урок 5,  Осінь 2024</a>
+			</div>
+		</footer>
+	</body>
+	</html>
