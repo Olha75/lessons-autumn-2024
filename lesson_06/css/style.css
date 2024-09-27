@@ -1,7 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap");
 
 @import url("reset.css");
 /* 
@@ -24,6 +24,16 @@ body{
 
 #logo{
     margin-block-end: 20px;
+}
+
+h1{
+    color:#e2dff8;
+    text-shadow: 1px 1px 1px aqua;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-block-end: 20px;
+    font-size:25px;
+    text-align: center;
 }
 
 .main-menu{
