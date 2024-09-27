@@ -1,0 +1,248 @@
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+@import url("reset.css");
+/* 
+@import url("fonts.css"); */
+
+
+/* ----------Практика---------- */
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper{
+    min-block-size: 100%;
+    overflow: hidden;
+}
+
+
+/* ----------Практика----------- */
+
+#logo{
+    margin-block-end: 20px;
+}
+
+.main-menu{
+    padding: 30px 250px;
+    color:#122eae;
+}
+
+.practice{
+    background-color: rgb(48, 44, 40);
+
+}
+.practice-container{
+    max-inline-size: 1500px;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+.borders{
+    padding: 15px;
+    font-size: 0;
+}
+
+.cube{
+    padding: 25px;
+    inline-size: 200px; 
+    background-color: rgb(121, 242, 242);
+    margin: 12px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.cube-1{
+    border-inline-end: 4px solid red;
+    border-inline-start: 7px dotted yellow;
+    border-block-end: 8px dashed #0ac023;
+    border-block-start: 10px double rgb(148, 18, 137);
+}
+
+.bord{
+    border: 2px dotted orangered;
+}
+
+.cube-2{
+    outline: 4px solid rgb(66, 175, 238);
+    outline-offset: 4px;
+}
+
+.cube-3{
+    border-radius: 71% 29% 70% 30% / 67% 30% 70% 33%;
+}
+
+.cube-4{
+    box-shadow:8px 10px 3px #0ac023, inset 4px 2px 9px rebeccapurple, 3px 9px 19px aqua;
+}
+
+.cube-5{
+    opacity: 0.3;
+}
+
+.cube-6{
+    visibility: hidden;
+}
+
+.cube-7{
+    background-color: #0ac023;
+}
+
+.cube-8{
+    background-image: url("../img/icon_button.svg");
+    background-repeat: no-repeat;    
+}
+
+
+.cube-9{
+    background: rgb(206,251,63);
+    background: radial-gradient(circle, rgba(206,251,63,1) 0%, rgba(110,235,59,1) 20%, rgba(54,98,217,1) 37%, rgba(197,178,49,1) 69%, rgba(42,104,173,1) 100%);
+}
+
+.cube-10{
+    background-image: url("../img/icon_button.svg");
+}
+
+.cube-11{
+    background: url("../img/background_middle.png");
+    background-position: 0 0;
+    background-size: 80px;
+    color:#a9f32a;
+    position: fixed;
+}
+
+.cube-12{
+    background: url("../img/logo.jpg") 0 10px / 200px no-repeat;
+    color: #dddbec;
+}
+
+.cube-13{
+    background: url("../img/icon_button.svg") no-repeat 0 0 / 30px, url("../img/logo.jpg") no-repeat right  bottom / 100px, aqua;
+    color: #80750d;
+}
+
+
+/* ----------Макет 1---------- */
+
+.part-2{
+    background-color: #FDF0E9;
+}
+.part-2 .container{
+    max-inline-size: 1200px;
+    margin: 0 auto;
+    /* margin-inline: auto; */
+    padding-inline: 15px;
+    font-family: "Epilogue", sans-serif;
+    color:#391400;
+    background: url("../img/background_image.png") right 73px / 529px no-repeat;
+}
+
+.block-left{
+    padding-block: 150px;
+    max-inline-size: 470px;
+}
+
+.block-left span{
+    color: #EF6D58;
+    line-height: 2.0; /* 200% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-block-end: 20px;    
+}
+
+.block-left h2{
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.14286; /* 114.286% */
+    letter-spacing: -1px;
+    max-inline-size: 397px;
+    margin-block-end: 26px;
+}
+
+.block-left p{
+    font-size: 20px;
+    line-height: 1.6; /* 160% */
+    max-inline-size: 470px;
+    margin-block-end: 26px;
+}
+
+.list-item{
+    background: url("../img/icon_check.jpg") 0 0 / 32px no-repeat ;
+    color: rgba(57, 20, 0, 0.64);
+    line-height: 2.0; /* 200% */
+    padding-inline-start: 48px;
+    min-block-size: 32px;
+    margin-block-end: 16px;
+    vertical-align: middle;
+}
+
+.list-item.last-item{
+    margin-block-end: 0;
+}
+
+
+/* ----------Макет 2---------- */
+
+.part-3{
+background:   url("../img/bacgground_mini.png") 50% 351px / 160px no-repeat, url("../img/background_middle.png") 50% 195px / 470px no-repeat, url("../img/background_big.png") 0 0   no-repeat,  #141414;
+}
+
+.part-3 .container{
+    max-inline-size: 1126px;
+    font-family: Manrope;
+    color:#FFF;
+    padding-block: 796px 30px;
+    padding-inline: 15px;
+    margin-inline: auto;
+    line-height: 1.5; /* 150%*/
+}
+
+.part-3 h2{
+text-align: center;
+font-size: 58px;
+font-weight: 700;
+margin-block-end: 14px;
+}
+
+.part-3 p{
+    color: #999;
+    text-align: center;
+    font-size: 18px;
+    margin-block-end: 50px;
+}
+
+.button{
+    background-color: #E50000;
+    padding-block: 18px;
+    padding-inline: 24px;
+    border-radius:8px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    inline-size: 251px;
+}
+
+.button span{
+    background: url("../img/icon_button.svg") left /28px  no-repeat;
+    padding-inline-start: 32px;
+    min-inline-size: 32px;
+    display: inline-block;
+}
+
+
+/* ----------Footer---------- */
+
+.footer{
+    padding: 15px;
+    text-align: center;
+    background-color: #5D6970;
+}
+
+.footer a{
+    color:#dddbec;
+    font-size: 14px;
+    text-transform: uppercase;
+}
