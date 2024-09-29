@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>lesson_07</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="main-menu">
+					<img src="img/logo.jpg" alt="logo" id="logo">
+					<ul>
+						<li><a href="#practice">Практика</a></li>
+						<li><a href="#business-presentation-1">Д/з Макет №1 "BusinessPresentation" ч.1</a></li>
+						<li><a href="#business-presentation-2">Д/з Макет №2 "BusinessPresentation" ч.2</a></li>
+						<li><a href="#portfolio-template">Д/з Макет №3 "PortfolioTemplate" ч.2</a></li>
+						<li><a href="#play">Д/з Гра</a></li>
+					</ul>
+				</div>
+			</header>
+			<main>
+				<div class="practice" id="#practice">
+					<div class="practice-container">
+						<h1>Псевдокласи та псевдоелементи</h1>
+						<h2>Повністю зникли міста України <span>(ще до вторгнення орків)</span></h2>
+						<h3>список частковий</h3>
+						<ul class="town-list">
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D1%97%D0%B2_(%D1%80%D1%83%D1%81%D1%8C%D0%BA%D0%B5_%D0%BC%D1%96%D1%81%D1%82%D0%BE)" target="_blank">Андріїв - давньоруське літописне місто. Час виникнення і зникнення невідомі.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%91%D0%B0%D0%BA%D0%BE%D1%82%D0%B0" target="_blank">Бакота - місто з ХІІІ століття. Після придушення повстання 1431 року - село. У 1981 році припинило існування у зв'язку із затопленням водами Дністровського водосховища.</a></li>
+							<li><a href="https://uk.wikipedia.org/w/index.php?title=%D0%91%D0%B0%D0%BB%D1%96%D0%BD_(%D0%BF%D0%BE%D0%BB%D0%BE%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%B5_%D0%BF%D0%BE%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F)&action=edit&redlink=1" target="_blank">Балін - історичне половецьке місто. Локалізація не встановлена.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%B5%D0%B7%D0%B8%D0%B9" target="_blank">Березий - давньоруське літописне місто. Відоме з ХІ століття. Зруйноване монголо - татарами у 1239 році.</a></li>
+							<li><a href="https://uk.wikipedia.org/w/index.php?title=%D0%91%D1%96%D0%BB%D0%B8%D1%85%D0%BE%D0%B2%D0%B8%D1%87%D1%96&action=edit&redlink=1" target="_blank">Білиховичі - історичне місто на місці Херсона.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%91%D0%BE%D0%BB%D0%B8-%D0%A1%D0%B0%D1%80%D0%B0%D0%B9" target="_blank">Боли Сарай - історичне татарське місто засноване у 1576 році. Дата зникнення невідома.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%92%D0%BE%D0%B7%D0%B2%D1%8F%D0%B3%D0%BB%D1%8C_(%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0_%D0%BF%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BA%D0%B0)" target="_blank">Возвягль - давньоруське літописне місто. Вперше згадується у 1170 році. Зруйноване військом тіуна Данила Галицького у 1257 році за непокору.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%92%D0%BE%D1%97%D0%BD%D1%8C" target="_blank">Воїнь - давньоруське літописне місто. Зруйноване монголо - татарами у 1239 році. Після - село Воїнська Гребля, у 1961 році ліквідоване в зв'язку із затопленням водами Кременчуцького водосховища.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%92%D1%81%D0%B5%D0%B2%D0%BE%D0%BB%D0%BE%D0%B6" target="_blank">Всеволож - давньоруське літописне місто на Львівщині. Вперше згадується у 1090 році. Зруйноване монголо - татарами у 1241 році.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%92%D1%81%D0%B5%D0%B2%D0%BE%D0%BB%D0%BE%D0%B6_(%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2%D1%89%D0%B8%D0%BD%D0%B0)" target="_blank">Всеволож - давньоруське літописне місто на Чернігівщині. Вперше згадується у 1147 році. Зруйноване монголо - татарами у 1239 році.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%92%27%D1%8F%D1%85%D0%B0%D0%BD%D1%8C" target="_blank">В'яхань - давньоруське літописне місто. Відоме з ХІ століття. Зруйноване монголо - татарами у 1239 році.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BB%D0%B8%D1%87" target="_blank">Галич (давній) - місто, столиця Галицько - Волинського князівства. Після зруйнування монголо - татарами, було перенесене на інше місце. Давній Галич знаходився біля села Крилос.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D0%B4_(%D1%83%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B5)" target="_blank">Гард - паланкове місто Бугогардівської паланки. Зникло після ліквідації Нової Січі у 1775 році.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%93%D0%BB%D1%96%D0%B1%D0%BB%D1%8C" target="_blank">Глібль - давньоруське літописне місто. Вперше згадується у 1147 році. Зруйноване монголо - татарами у 1239 році.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%93%D1%83%D1%80%D0%B8%D1%87%D1%96%D0%B2" target="_blank">Гуричів - давньоруське літописне місто. Відоме з кінця ХІ століття. Зруйноване монголо - татарами у 1239 році.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D1%96%D0%B2_(%D0%BC%D1%96%D1%81%D1%82%D0%BE)" target="_blank">Данилів - давньоруське літописне місто. Вперше згадується у 1241 році. Зруйноване під час війн між Польщею, Угорщиною та Литвою за галицько - волинську спадщину.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%85%D0%B0_(%D0%B7%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B7%D1%8C%D0%BA%D0%B8%D0%B9_%D1%84%D0%BE%D1%80%D0%BF%D0%BE%D1%81%D1%82)" target="_blank">Домаха - паланкове місто Кальміуської паланки. Зруйноване татарами у 1768 році. У 1778 році на місці Домахи було збудовано місто Павлівськ.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D1%80%D1%83%D0%B1" target="_blank">Заруб - давньоруське літописне місто. Вперше згадується у 1096 році. Зруйноване монголо - татарами у 1223 чи 1239 - 1240 роках.</a></li>
+							<li><a href="https://uk.wikipedia.org/w/index.php?title=%D0%97%D0%B2%D0%B5%D0%BD%D0%B8%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&action=edit&redlink=1" target="_blank">Звенигород - літописне давньоруське місто. Імовірна локалізація - городище Віта - Поштова.</a></li>
+							<li><a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D1%8C_(%D0%BC%D1%96%D1%81%D1%82%D0%BE)" target="_blank">Здвижень - давньоруське літописне місто.</a></li>
+					    </ul>	
+						<div class="img-weather">
+							<h3>Пори року на прикладі target</h3><br>
+							<a href="#winter">Зима</a>
+							<a href="#spring">Весна</a>
+							<a href="#summer">Літо</a>
+							<a href="#autumn">Осінь</a>							
+							<img src="img/winter.jpg" alt="Зима, дерево." id="winter">
+							<img src="img/spring.jpg" alt="Весна, дерево" id="spring">
+							<img src="img/summer.jpg" alt="Літо, дерево" id="summer">
+							<img src="img/autumn.jpg" alt="Осінь, дерево" id="autumn">						
+						</div>
+					</div>	
+				</div>
+			    <div id="business-presentation-1" class="part-2">
+					<div class="container">
+						<ul class="list-bp1">
+							<li class="item-bp1">
+								<span>Jan 2023</span>
+								<h3>Research & discovery</h3>
+								<p>Et arcu aliquam viverra felis rhoncus vitae arcu eget urna viverra massa nullaolmerolil fermentum congue ultrices.</p>
+							</li>
+							<li class="item-bp1">
+								<span>Feb 2023</span>
+								<h3>Product development</h3>
+								<p>Libero sed nibh dictumst viverra tincidunt nulla risusolm neque lorem sed elementum adipiscing purus massa.</p>
+							</li>
+							<li class="item-bp1">
+								<span>Apr 2023</span>
+								<h3>Product launch</h3>
+								<p>In diam aenean nunc amet faucibus commodo mattisole tincidunt euismod quis gravida tellus eros venenatis.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="business-presentation-2" class="part-3">
+					<div class="container">
+						<div class="card">
+							<div class="card-price">
+								<h4>Basic</h4>
+								<p class="price">$99</p>
+								<h5 class="subtitle">Billed monthly</h5>
+							</div>
+							<ul class="list-card">
+								<li class="item-card">All analytics features</li>
+								<li class="item-card">Up to 250,000 tracked visits</li>
+								<li class="item-card">Normal support</li>
+								<li class="item-card">Up to 3 team members</li>
+							</ul>
+						</div>
+					</div>
+				</div>				
+				<div id="portfolio-template" class="part-4">
+					<div class="container">
+						<img src="img/workfriends.jpg" alt="молоді веселі люди сміються за ноутбуками" title="молоді веселі люди сміються за ноутбуками" class="part-4-img">
+						<div class="article-1">
+							<h3>Agency provides a full service range including technical skills, design, business understanding.</h3>
+							<p>Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>									
+						</div>
+						<div class="article-2">
+							<h3>Promote your product</h3>
+							<p>Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.</p>
+							<ul>
+								<li>Digital marketing</li>
+								<li>Efforts instead</li>
+								<li>Handling in-house</li>
+							</ul>
+							<p>A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>
+						</div>
+						<div class="article-3">
+							<h3>Service online and help</h3>
+							<p>Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.</p>
+							<ol>
+								<li class="num-item">1. Marketing efforts</li>
+								<li class="num-item">2. Instead of handling</li>
+								<li class="num-item">3. In-house</li>
+							</ol>
+							<p class="before-quote">Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>						
+							<div class="article-4">
+								<p>Provide your business with a variety of digital solutions to promote your product or service online and help you.</p>
+							</div>
+						    <p>Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>
+					   </div>						
+					</div>
+				</div>			
+				<div class="play">
+					<div class="play-container">
+						<h3>Гра</h3>
+						    <div class="bl">
+								<div class="game l-1">START</div>
+								<div class="game l-2 hidden"></div>
+								<div class="game l-3 hidden"></div>
+								<div class="game l-4 hidden"></div>
+								<div class="game l-5 hidden inl"></div>
+								<div class="game l-6 hidden inl"></div>
+								<div class="game l-7  hidden inl"></div>
+								<div class="game l-8 hidden inl"></div>
+								<div class="game l-9 hidden inl"></div>
+								<div class="game l-10 hidden inl"></div>
+								<div class="game l-11 hidden inl"></div>
+								<div class="game l-12 hidden inl"></div>
+								<div class="game l-13 hidden inl"></div>
+								<div class="game l-14 hidden inl"></div>
+								<div class="game l-15  inl hidden"></div>
+								<div class="game l-16 hidden inl "></div>
+								<div class="game l-17 hidden  inl"></div>
+								<div class="game l-18 hidden  inl"></div>
+								<div class="game l-19 hidden inl"></div>
+								<div class="game l-20 hidden inl"></div>
+								<div class="game l-21 hidden  inl"></div>
+								<div class="game l-22 hidden inl"></div>					    
+								<div class="game l2-23 inl hidden"></div>
+								<div class="game l2-24 inl hidden"></div>
+								<div class="game l2-25 inl hidden"></div>
+								<div class="game l2-26 inl hidden"></div>
+								<div class="game l2-27 inl hidden"></div>
+								<div class="game l2-28 inl hidden"></div>
+								<div class="game l2-29 inl hidden"></div>
+								<div class="game l2-30 inl hidden"></div>
+								<div class="game l2-31 inl hidden"></div>
+								<div class="game l2-32 inl hidden"></div>
+								<div class="game l2-33 inl hidden"></div>
+								<div class="game l2-34 inl hidden"></div>
+								<div class="game l2-35 inl hidden"></div>
+								<div class="game l2-36 inl hidden"></div>
+								<div class="game l2-37 inl hidden"></div>
+								<div class="game l2-38 inl hidden"></div>
+								<div class="game l2-39 inl hidden"></div>
+								<div class="game l2-40 inl hidden"></div>						
+								<div class="game l3-23 inl hidden"></div>
+								<div class="game l3-24 inl hidden"></div>
+								<div class="game l3-25 inl hidden"></div>
+								<div class="game l3-26 inl hidden"></div>
+								<div class="game l3-27 inl hidden"></div>
+								<div class="game l3-28 inl hidden"></div>
+								<div class="game l3-29 inl hidden red"></div>
+								<div class="game l3-30 inl hidden"></div>
+								<div class="game l3-31 inl hidden"></div>
+								<div class="game l3-32 inl hidden"></div>
+								<div class="game l3-33 inl hidden"></div>
+								<div class="game l3-34 inl hidden"></div>
+								<div class="game l3-35 inl hidden"></div>
+								<div class="game l3-36 inl hidden"></div>
+								<div class="game l3-37 inl hidden"></div>
+								<div class="game l3-38 inl hidden"></div>
+								<div class="game l3-39 inl hidden"></div>
+								<div class="game l3-40 inl hidden"></div>							
+								<div class="game l4-23 inl hidden"></div>
+								<div class="game l4-24 inl hidden"></div>
+								<div class="game l4-25 inl hidden"></div>
+								<div class="game l4-26 inl hidden red"></div>
+								<div class="game l4-27 inl hidden"></div>
+								<div class="game l4-28 inl hidden "></div>
+								<div class="game l4-29 inl hidden"></div>
+								<div class="game l4-30 inl hidden"></div>
+								<div class="game l4-31 inl hidden "></div>
+								<div class="game l4-32 inl hidden"></div>
+								<div class="game l4-33 inl hidden"></div>
+								<div class="game l4-34 inl hidden"></div>
+								<div class="game l4-35 inl hidden"></div>
+								<div class="game l4-36 inl hidden"></div>
+								<div class="game l4-37 inl hidden"></div>
+								<div class="game l4-38 inl hidden"></div>
+								<div class="game l4-39 inl hidden"></div>
+								<div class="game l4-40 inl hidden"></div>						    
+							    <div class="game l5-23 inl hidden"></div>
+								<div class="game l5-24 inl hidden"></div>
+								<div class="game l5-25 inl hidden"></div>
+								<div class="game l5-26 inl hidden" ></div>
+								<div class="game l5-27 inl hidden"></div>
+								<div class="game l5-28 inl hidden"></div>
+								<div class="game l5-29 inl hidden"></div>
+								<div class="game l5-30 inl hidden"></div>
+								<div class="game l5-31 inl hidden"></div>
+								<div class="game l5-32 inl hidden"></div>
+								<div class="game l5-33 inl hidden"></div>
+								<div class="game l5-34 inl hidden"></div>
+								<div class="game l5-35 inl hidden"></div>
+								<div class="game l5-36 inl hidden"></div>
+								<div class="game l5-37 inl hidden"></div>
+								<div class="game l5-38 inl hidden"></div>
+								<div class="game l5-39 inl hidden"></div>
+								<div class="game l5-40 inl hidden"></div>							
+								<div class="game l6-23 inl hidden"></div>
+								<div class="game l6-24 inl hidden"></div>
+								<div class="game l6-25 inl hidden"></div>
+								<div class="game l6-26 inl hidden red"></div>
+								<div class="game l6-27 inl hidden"></div>
+								<div class="game l6-28 inl hidden"></div>
+								<div class="game l6-29 inl hidden"></div>
+								<div class="game l6-30 inl hidden red"></div>
+								<div class="game l6-31 inl hidden"></div>
+								<div class="game l6-32 inl hidden"></div>
+								<div class="game l6-33 inl hidden"></div>
+								<div class="game l6-34 inl hidden"></div>
+								<div class="game l6-35 inl hidden"></div>
+								<div class="game l6-36 inl hidden"></div>
+								<div class="game l6-37 inl hidden"></div>
+								<div class="game l6-38 inl hidden "></div>
+								<div class="game l6-39 inl hidden"></div>
+								<div class="game l6-40 inl hidden"></div>
+								<div class="game l7-23 inl hidden"></div>
+								<div class="game l7-24 inl hidden"></div>
+								<div class="game l7-25 inl hidden"></div>
+								<div class="game l7-26 inl hidden"></div>
+								<div class="game l7-27 inl hidden"></div>
+								<div class="game l7-28 inl hidden"></div>
+								<div class="game l7-29 inl hidden"></div>
+								<div class="game l7-30 inl hidden"></div>
+								<div class="game l7-31 inl hidden"></div>
+								<div class="game l7-32 inl hidden"></div>
+								<div class="game l7-33 inl hidden"></div>
+								<div class="game l7-34 inl hidden"></div>
+								<div class="game l7-35 inl hidden"></div>
+								<div class="game l7-36 inl hidden"></div>
+								<div class="game l7-37 inl hidden"></div>
+								<div class="game l7-38 inl hidden"></div>
+								<div class="game l7-39 inl hidden"></div>
+								<div class="game l7-40 inl hidden"></div>
+								<div class="game l8-23 inl hidden"></div>
+								<div class="game l8-24 inl hidden"></div>
+								<div class="game l8-25 inl hidden"></div>
+								<div class="game l8-26 inl hidden"></div>
+								<div class="game l8-27 inl hidden"></div>
+								<div class="game l8-28 inl hidden"></div>
+								<div class="game l8-29 inl hidden"></div>
+								<div class="game l8-30 inl hidden"></div>
+								<div class="game l8-31 inl hidden"></div>
+								<div class="game l8-32 inl hidden"></div>
+								<div class="game l8-33 inl hidden"></div>
+								<div class="game l8-34 inl hidden"></div>
+								<div class="game l8-35 inl hidden"></div>
+								<div class="game l8-36 inl hidden red"></div>
+								<div class="game l8-37 inl hidden"></div>
+								<div class="game l8-38 inl hidden"></div>
+								<div class="game l8-39 inl hidden"></div>
+								<div class="game l8-40 inl hidden"></div>
+								<div class="game l9-23 inl hidden"></div>
+								<div class="game l9-24 inl hidden"></div>
+								<div class="game l9-25 inl hidden"></div>
+								<div class="game l9-26 inl hidden"></div>
+								<div class="game l9-27 inl hidden"></div>
+								<div class="game l9-28 inl hidden"></div>
+								<div class="game l9-29 inl hidden"></div>
+								<div class="game l9-30 inl hidden"></div>
+								<div class="game l9-31 inl hidden"></div>
+								<div class="game l9-32 inl hidden"></div>
+								<div class="game l9-33 inl hidden"></div>
+								<div class="game l9-34 inl hidden"></div>
+								<div class="game l9-35 inl hidden"></div>
+								<div class="game l9-36 inl hidden"></div>
+								<div class="game l9-37 inl hidden"></div>
+								<div class="game l9-38 inl hidden"></div>
+								<div class="game l9-39 inl hidden"></div>
+								<div class="game l9-40 inl hidden"></div>
+								<div class="game l10-23 inl hidden"></div>
+								<div class="game l10-24 inl hidden"></div>
+								<div class="game l10-25 inl hidden"></div>
+								<div class="game l10-26 inl hidden"></div>
+								<div class="game l10-27 inl hidden"></div>
+								<div class="game l10-28 inl hidden"></div>
+								<div class="game l10-29 inl hidden"></div>
+								<div class="game l10-30 inl hidden"></div>
+								<div class="game l10-31 inl hidden"></div>
+								<div class="game l10-32 inl hidden"></div>
+								<div class="game l10-33 inl hidden"></div>
+								<div class="game l10-34 inl hidden"></div>
+								<div class="game l10-35 inl hidden"></div>
+								<div class="game l10-36 inl hidden"></div>
+								<div class="game l10-37 inl hidden"></div>
+								<div class="game l10-38 inl hidden"></div>
+								<div class="game l10-39 inl hidden"></div>
+								<div class="game l10-40 inl hidden"></div>
+							    <div class="game l11-23 inl hidden"></div>
+								<div class="game l11-24 inl hidden"></div>
+								<div class="game l11-25 inl hidden"></div>
+								<div class="game l11-26 inl hidden"></div>
+								<div class="game l11-27 inl hidden"></div>
+								<div class="game l11-28 inl hidden"></div>
+								<div class="game l11-29 inl hidden"></div>
+								<div class="game l11-30 inl hidden"></div>
+								<div class="game l11-31 inl hidden"></div>
+								<div class="game l11-32 inl hidden"></div>
+								<div class="game l11-33 inl hidden"></div>
+								<div class="game l11-34 inl hidden"></div>
+								<div class="game l11-35 inl hidden"></div>
+								<div class="game l11-36 inl hidden"></div>
+								<div class="game l11-37 inl hidden"></div>
+								<div class="game l11-38 inl hidden"></div>
+								<div class="game l11-39 inl hidden"></div>
+								<div class="game l11-40 inl hidden"></div>
+								<div class="game l12-23 inl hidden"></div>
+								<div class="game l12-24 inl hidden"></div>
+								<div class="game l12-25 inl hidden"></div>
+								<div class="game l12-26 inl hidden"></div>
+								<div class="game l12-27 inl hidden"></div>
+								<div class="game l12-28 inl hidden"></div>
+								<div class="game l12-29 inl hidden"></div>
+								<div class="game l12-30 inl hidden"></div>
+								<div class="game l12-31 inl hidden"></div>
+								<div class="game l12-32 inl hidden"></div>
+								<div class="game l12-33 inl hidden"></div>
+								<div class="game l12-34 inl hidden"></div>
+								<div class="game l12-35 inl hidden"></div>
+								<div class="game l12-36 inl hidden"></div>
+								<div class="game l12-37 inl hidden"></div>
+								<div class="game l12-38 inl hidden"></div>
+								<div class="game l12-39 inl hidden"></div>
+								<div class="game l12-40 inl hidden"></div>
+								<div class="game l13-23 inl hidden"></div>
+								<div class="game l13-24 inl hidden"></div>
+								<div class="game l13-25 inl hidden"></div>
+								<div class="game l13-26 inl hidden"></div>
+								<div class="game l13-27 inl hidden"></div>
+								<div class="game l13-28 inl hidden"></div>
+								<div class="game l13-29 inl hidden"></div>
+								<div class="game l13-30 inl hidden"></div>
+								<div class="game l13-31 inl hidden"></div>
+								<div class="game l13-32 inl hidden"></div>
+								<div class="game l13-33 inl hidden"></div>
+								<div class="game l13-34 inl hidden"></div>
+								<div class="game l13-35 inl hidden"></div>
+								<div class="game l13-36 inl hidden red"></div>
+								<div class="game l13-37 inl hidden"></div>
+								<div class="game l13-38 inl hidden"></div>
+								<div class="game l13-39 inl hidden"></div>
+								<div class="game l13-40 inl hidden"></div>
+								<div class="game l14-23 inl hidden"></div>
+								<div class="game l14-24 inl hidden"></div>
+								<div class="game l14-25 inl hidden"></div>
+								<div class="game l14-26 inl hidden"></div>
+								<div class="game l14-27 inl hidden"></div>
+								<div class="game l14-28 inl hidden"></div>
+								<div class="game l14-29 inl hidden"></div>
+								<div class="game l14-30 inl hidden"></div>
+								<div class="game l14-31 inl hidden"></div>
+								<div class="game l14-32 inl hidden"></div>
+								<div class="game l14-33 inl hidden"></div>
+								<div class="game l14-34 inl hidden"></div>
+								<div class="game l14-35 inl hidden"></div>
+								<div class="game l14-36 inl hidden"></div>
+								<div class="game l14-37 inl hidden"></div>
+								<div class="game l14-38 inl hidden"></div>
+								<div class="game l14-39 inl hidden"></div>
+								<div class="game l14-40 inl hidden red"></div>
+							    <div class="game l15-23 inl hidden"></div>
+								<div class="game l15-24 inl hidden"></div>
+								<div class="game l15-25 inl hidden"></div>
+								<div class="game l15-26 inl hidden"></div>
+								<div class="game l15-27 inl hidden"></div>
+								<div class="game l15-28 inl hidden"></div>
+								<div class="game l15-29 inl hidden"></div>
+								<div class="game l15-30 inl hidden"></div>
+								<div class="game l15-31 inl hidden"></div>
+								<div class="game l15-32 inl hidden"></div>
+								<div class="game l15-33 inl hidden"></div>
+								<div class="game l15-34 inl hidden"></div>
+								<div class="game l15-35 inl hidden"></div>
+								<div class="game l15-36 inl hidden"></div>
+								<div class="game l15-37 inl hidden"></div>
+								<div class="game l15-38 inl hidden"></div>
+								<div class="game l15-39 inl hidden"></div>
+								<div class="game l15-40 inl hidden"></div>
+								<div class="game l16-23 inl hidden"></div>
+								<div class="game l16-24 inl hidden"></div>
+								<div class="game l16-25 inl hidden"></div>
+								<div class="game l16-26 inl hidden red"></div>
+								<div class="game l16-27 inl hidden"></div>
+								<div class="game l16-28 inl hidden"></div>
+								<div class="game l16-29 inl hidden"></div>
+								<div class="game l16-30 inl hidden"></div>
+								<div class="game l16-31 inl hidden"></div>
+								<div class="game l16-32 inl hidden red"></div>
+								<div class="game l16-33 inl hidden"></div>
+								<div class="game l16-34 inl hidden red"></div>
+								<div class="game l16-35 inl hidden"></div>
+								<div class="game l16-36 inl hidden"></div>
+								<div class="game l16-37 inl hidden"></div>
+								<div class="game l16-38 inl hidden"></div>
+								<div class="game l16-39 inl hidden"></div>
+								<div class="game l16-40 inl hidden green">end</div>							
+						    </div>
+					</div>
+				</div>			
+			</main>
+			<footer>
+				<div id="footer" class="footer">
+					<div class="container">
+						<a href="#logo">Урок 7,  Осінь 2024</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+	</html>
