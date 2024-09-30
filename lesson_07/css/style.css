@@ -388,10 +388,11 @@ font-style: italic;
 
 .part-4 ol{
     counter-reset: item;
+    list-style-type: decimal;
 }
 
 .num-item::before{
-    content: counter(item);
+    content: counter(item)".";
     counter-increment: item;
     margin-inline-end: 3px;
 }
