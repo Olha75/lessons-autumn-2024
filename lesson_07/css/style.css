@@ -386,6 +386,17 @@ font-style: italic;
     line-height: 2; /* 200% */
 }
 
+.part-4 ol{
+    counter-reset: item;
+}
+
+.num-item::before{
+    content: counter(item);
+    counter-increment: item;
+    margin-inline-end: 3px;
+}
+
+
 .article-1 p:not(:last-child) {
      margin-block-end:16px /* запобіжний відступ на випадок, якщо додадуться параграфи*/
 }
