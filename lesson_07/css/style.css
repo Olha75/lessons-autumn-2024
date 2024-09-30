@@ -203,11 +203,14 @@ font-style: italic;
 
 
 /* ---------Макет 1---------- */
+
+
 .part-2 .container{
     max-inline-size: 660px;
     padding-inline: 15px;
     padding-block: 21px 100px;
     margin-inline: auto;
+    font-family: "DM Sans", sans-serif;
 }
 
 .item-bp1 span{
@@ -224,6 +227,7 @@ font-style: italic;
     font-weight: 700;
     line-height: 1.28571; /* 128.571% */
     margin-block-end: 8px;
+    font-family: "DM Sans", sans-serif;
 }
 
 .item-bp1 h3::after{
@@ -248,11 +252,11 @@ font-style: italic;
     color: #6E6C83;
     font-size: 24px;
     line-height: 1.75; /* 175% */
+    font-family: "DM Sans", sans-serif;
 }
 
 .item-bp1:not(:last-child) {
     margin-block-end: 75px;
-    font-weight: 700;
 }
 
 
