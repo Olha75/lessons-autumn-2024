@@ -200,9 +200,9 @@ h1{
 }
 
 .bc-section{
-background:   url("../img/bacgground_mini.png")50% 351px  / 160px no-repeat, url("../img/background_middle.png") 50%  / 470px no-repeat, linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
+background:   url("../img/bacgground_mini.png")center / 160px no-repeat, url("../img/background_middle.png") center / 470px no-repeat, linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
 url("../img/background_big2.png") center / cover  no-repeat,  #141414;
-max-width: 100%;
+/* max-width: 100%; */
 min-block-size: 860px;
 }
 
