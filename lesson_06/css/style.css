@@ -195,25 +195,29 @@ h1{
 
 
 /* ----------Макет 2---------- */
-
 .part-3{
-background:   url("../img/bacgground_mini.png") 50% 351px / 160px no-repeat, url("../img/background_middle.png") 50% 195px / 470px no-repeat, linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%) center top, linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%) center bottom,
- url("../img/background_big2.png") center / cover  no-repeat,  #141414;
-
+    background-color: #141414;
 }
 
-.part-3 .container{
+.bc-section{
+background:   url("../img/bacgground_mini.png")50% 351px  / 160px no-repeat, url("../img/background_middle.png") 50%  / 470px no-repeat, linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
+url("../img/background_big2.png") center / cover  no-repeat,  #141414;
+max-width: 100%;
+min-block-size: 860px;
+}
+
+.container-bc{
     max-inline-size: 1126px;
     font-family: Manrope;
     color:#FFF;
-    /* margin-top: 796px; */
-    padding-block: 796px 30px;
+    padding-block-end:30px;
     padding-inline: 15px;
+    margin-top: -64px;
     margin-inline: auto;
     line-height: 1.5; /* 150%*/
 }
 
-.part-3 h2{
+.container-bc h2{
 text-align: center;
 font-size: 58px;
 font-weight: 700;
@@ -221,7 +225,7 @@ margin-block-end: 14px;
 text-transform: capitalize;
 }
 
-.part-3 p{
+.container-bc p{
     color: #999;
     text-align: center;
     font-size: 18px;
