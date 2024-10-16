@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+@import url("reset.css");
+/* 
+@import url("fonts.css"); */
+
+body{
+    font-family: "Epilogue", sans-serif;
+    background-color: #28293E;
+    position: relative;
+}
+
+.wrapper{
+    min-block-size: 100%;
+    overflow: clip;
+}
+
+[class*="__container"] {
+	max-width: 1140px;
+	margin-inline: auto;
+	padding-inline: 15px;
+}
+
+
+/* ----------Практика / макет----------- */
+.header{
+    background-color: rgb(98, 98, 159);
+    color: aliceblue;
+    margin-block-end: 15px;
+    padding: 15px;
+    position: sticky;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: 100;
+}
+
+.header__menu{
+vertical-align: middle;
+}
+
+.header__list{
+    display: inline-block;    
+}
+
+.header img{
+    margin-inline-end: 15px;
+}
+
+.list-header{
+    vertical-align: middle;
+}
+
+.list-header__item:not(:last-child){
+margin-block-end: 5px;
+}
+
+.list-header__item a:visited{
+    color: rgb(8, 8, 8);
+    text-shadow:1px 1px 1px rgb(230, 189, 99);
+}
+
+.list-header__item:hover{
+color: rgb(230, 189, 99);
+text-shadow: 1px 1px 1px rgb(8, 8, 8);
+}
+
+.homework__container{
+    padding: 25px;
+}
+
+.homework__title{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(98, 98, 159);
+}
+
+.homework__subtitle{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(98, 98, 159);
+    margin-block-end: 50px;
+}
+
+
+/*---------- Макет 1----------*/
+
+.pictures{
+    background-color: #28293E;
+    margin-block-end: 150px;
+}
+
+.pictures__container{
+    /* max-inline-size: 600px;  */
+    width: 585px;
+    position: relative;
+    height: 600px;
+    padding-block: 15px;
+    z-index: 1;
+}
+
+.components{
+}
+
+.components__circle{
+    width: 246px;
+    height: 246px;
+    background-color: #B550F8;
+    border-radius: 50%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+}
+
+.components__circle--yellow{
+    position: absolute;
+    background-color: #F7CC47;
+    inset-inline-start: 324px;
+    inset-block-start: 189px;
+}
+
+.components__circle--big{
+    width: 370px;
+    height: 370px;
+    background-color: #32334C;
+    position: absolute;
+    /* inset-inline-start: 50%;
+    inset-block-start: 50%; */
+    inset-inline-start: 100px;
+    inset-block-start: 100px;
+    z-index: -1;
+}
+
+.components__circle--red{
+    width: 112px;
+    height: 112px;
+    background-color: #EF6D58;
+    position: absolute;
+    inset-inline-start: 304px;
+    inset-block-start: 40px;    
+}
+
+.components__rectangle{
+    width: 246px;
+    height: 182px;
+    position: absolute;
+    background-color: #B550F8;
+    /* inset-inline-start: 0; */
+    inset-block-start: 123px;
+    border-radius: 6px;
+}
+
+.components__rectangle--yellow{
+    background-color: #F7CC47;
+    position: absolute;
+    inset-inline-start: 324px;
+    inset-block-start: 312px;
+}
+
+
+
+.pictures__mail{
+    position: absolute;
+    inset-inline-start: 56px;
+    inset-block-start: 431px;
+}
+
+.pictures__content{
+ position: relative;
+ background-color: #ffffff;
+ width: 214px;
+ height: 112px;
+ border-radius: 6px;
+}
+
+.rectangle-components{
+    position: absolute;
+    inset-inline-start: 83px;
+    inset-block-start: 71px;
+    background-color: #DFE0E9;
+    width: 43.93%; /*94px*/
+    height: 5.36%; /*6px*/
+    z-index: 3;
+    border-radius: 3px;
+}
+
+.rectangle-components--wide{
+    inset-block-start: 27px;
+    height: 12.5%; /*14px*/
+    border-radius: 2px;
+}
+
+.rectangle-components--small{
+    width: 28.97%; /*62px*/
+    inset-block-start: 85px;
+}
+
+.rectangle-components--average{
+    width: 36.45%; /*78px*/
+    inset-block-start: 57px;
+}
+
+.circle-red-small{
+    width: 21.03%; /*45px*/
+    height: 40.18%; /*45px*/
+    background-color: #EF6D58;
+    position: absolute;
+    inset-inline-start: 18px;
+    inset-block-start: 17px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.pictures__spring{
+    position: absolute;
+    /* inset-inline-start: 0; */
+    inset-block-start: 341px;
+}
+
+.pictures__arrow{
+    position: absolute;
+    inset-inline-start: 314px;
+    inset-block-end: 15px;
+    z-index: 3;
+}
+
+.pictures__cloud{
+    position: absolute;
+    inset-inline-start: 458px;
+    inset-block-start: 80px;
+    z-index: 3;
+}
+
+.pictures__stars{
+    position: absolute;
+    inset-inline-start: 339px;
+    inset-block-start: 68px;
+    /* width: 142px; */
+    z-index: 3;
+}
+
+.pictures__laptop{
+    width: 255px;
+    position: absolute;
+    inset-inline-start: 36px;
+    inset-block-start: 24px;
+}
+
+.pictures__woman{
+    width: 246px;
+    position: absolute;
+    inset-inline-start: 324px;
+    inset-block-start: 225px;
+}
+
+
+
+/*---------- Макет 2----------*/
+
+.portfolio {
+    background-color: #28293E;
+    margin-bottom: 50px;
+}
+.portfolio__container {
+    max-width: 512px;
+}
+
+.portfolio__card{
+    overflow: clip;
+}
+
+.card{
+    outline: 1px solid  #32334C;
+    outline-offset: 16px;
+    margin-inline: auto;
+    position: relative;
+}
+
+.card:hover{
+    outline: 1px solid  #B550F8;
+}
+
+.card__link {
+}
+
+.card__link img{
+    background: #5C2000;
+    opacity: 0.3181;
+    z-index: -1;
+    } 
+
+.card__img {
+    min-width: 448px;
+}  
+
+.card__button {
+    background-color: #ffffff;
+    color:#391400;
+    line-height: 2.0; /* 200% */
+    min-width: 84px;
+    max-width: 352px;
+    border-radius: 19px;
+    position: absolute;
+    inset-inline-start: 48px;
+    inset-block-start: 416px;
+    text-align: center;
+}
+
+.card__button:hover{
+    background-color: #B550F8;
+    color:#ffffff;
+}
+
+.card__title {
+    color: #FFF;
+font-size: 40px;
+font-weight: 800;
+line-height: 1.2; /* 120% */
+text-transform: uppercase;
+position: absolute;
+inset-inline-start: 48px;
+inset-block-start: 477px;
+}
+
+
+
+/* ----------Footer---------- */
+.footer{
+    padding: 15px;
+    text-align: center;
+    background-color: #5D6970;
+    
+}
+
+.footer a{
+    color:#dddbec;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>lesson_10</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__menu">
+						<img src="img/logo.jpg" alt="logo" id="logo" class="header__logo">
+						<ul class="header__list list-header">
+							<li class="list-header__item"><a href="#portfolio-template" class="list-header__link">Д/з Макет "PortfolioTemplate" ч.1</a></li>
+							<li class="list-header__item"><a href="#portfolio-template-two" class="list-header__link">Д/з Макет "PortfolioTemplate" ч.2</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<div class="homework">
+					<div class="homework__container">
+						<h1 class="homework__title">Домашня робота №10</h1>
+						<h2 class="homework__subtitle">Позиціонування</h2>
+					</div>
+				</div>
+
+				<div id="portfolio-template" class="pictures">
+					<div class="pictures__container">
+						<div class="pictures__components components">
+							<div class="components__circle components__circle--big"></div>
+							<div class="components__circle"></div>
+							<div class="components__circle components__circle--yellow"></div>
+							<div class="components__circle components__circle--red"></div>
+							<div class="components__rectangle"></div>
+							<div class="components__rectangle components__rectangle--yellow"></div>							
+						</div>	
+
+						<div class="pictures__mail">
+							<div class="pictures__content">
+								<div class="pictures__item  rectangle-components"></div>														
+								<div  class="pictures__item rectangle-components rectangle-components--wide"></div>
+								<div class="pictures__item rectangle-components rectangle-components--small"></div>
+								<div class="pictures__item rectangle-components rectangle-components--average"></div>
+								<div class="pictures__item circle-red-small"></div>
+							</div>
+						</div>
+
+						<img src="img/icons_decor/spring_decor.svg" alt="декор у вигляді пружини" class="pictures__spring">
+						<img src="img/icons_decor/arrow_decor.svg" alt="декор у вигляді стрілки" class="pictures__arrow">
+						<img src="img/icons_decor/cloud_decor.svg" alt="декор у вигляді облака" class="pictures__cloud">
+						<img src="img/icons_decor/stars.svg" alt="декор у вигляді зірок" class="pictures__stars">						
+
+						<picture>								
+							<source srcset="img/images_content/laptop_1.5x_opt.webp 1.5x, img/images_content/laptop_2x_opt.webp  2x, img/images_content/laptop_3x_opt.webp 3x" type="image/webp"> 
+							<img src="img/images_content/laptop_1x_opt.png" alt="Ноутбук графітового кольору" class="pictures__laptop">
+						</picture>
+						
+						<img srcset="img/images_content/woman_1.5х_opt.webp 1.5x, img/images_content/woman_2х_opt.webp 2x, img/images_content/woman_3х_opt.webp 3x" src="img/images_content/woman_1х_opt.webp" alt="дівчина, що сміється, шатенка в червоному светрі" class="pictures__woman">
+					</div>
+				</div>
+
+				<div class="portfolio" id="portfolio-template-two">
+					<div class="portfolio__container">
+						<div class="portfolio__card card">
+							<a href="#" title="перехід до каталогу Sofa" class="card__link">	
+								<img srcset="img/images_content/card_1.5x_opt.webp 1.5x, img/images_content/card_2x_opt.webp 2x, img/images_content/card_3x_opt.webp 3x" src="img/images_content/card_1x_opt.webp" alt="абстрактне зображення у вигляді округлих сходів" class="card__img">	
+
+								<!-- Замінила кнопку замість тега a на span, бо а не може бути вкладене в а -->
+								<span class="card__button">Design</span>
+								<h3 class="card__title">SOFA</h3>
+							</a>
+						</div>						
+					</div>
+				</div>
+			</main>
+
+			<footer>
+				<div id="footer" class="footer">
+					<div class="footer__container">
+						<a href="#logo" class="footer__link">Урок 10,  Осінь 2024</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+	</html>
