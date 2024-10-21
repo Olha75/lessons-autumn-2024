@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>lesson_11</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__menu">
+						<img src="img/logo.jpg" alt="logo" id="logo" class="header__logo">
+						<ul class="header__list list-header">
+							<li class="list-header__item"><a href="#practice" class="list-header__link">Практика "Трансформації</a></li>
+							<li class="list-header__item"><a href="#car" class="list-header__link">Д/з Машина</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<div class="homework">
+					<div class="homework__container">
+						<h1 class="homework__title">Домашня робота №11</h1>
+						<h2 class="homework__subtitle">Трансформації</h2>
+					</div>
+				</div>
+
+				<div class="practice" id="practice">
+					<div class="practice__container">
+						<h2 class="practice__subtitle">2D Трансформації</h2>	
+						<div class="practice__content  two-d">
+							<div class="two-d__transform translate">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>translate</h3>
+							</div>
+							<div class="two-d__transform scale">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>scale v.1</h3>
+							</div>
+							<div class="two-d__transform scale-two">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>scale v.2</h3>
+							</div>
+							<div class="two-d__transform rotate">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>rotate</h3>
+							</div>
+							<div class="two-d__transform skew">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>skew v.1</h3>
+							</div>
+							<div class="two-d__transform skew-two">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>skew v.2</h3>
+							</div>
+							<div class="two-d__transform matrix">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>matrix v.1</h3>
+							</div>
+							<div class="two-d__transform matrix-two">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>matrix v.2</h3>
+							</div>
+							<div class="two-d__transform origin">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>origin v.1</h3>
+							</div>	
+							<div class="two-d__transform origin-two">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="two-d__img"> 
+								<h3>origin v.2</h3>
+							</div>							
+						</div>
+
+						<h2 class="practice__subtitle">3D Трансформації</h2>
+						<div class="practice__perspective-content three-d">
+							<div class="three-d__transform translate3d">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="three-d__img">
+								<h3>translate3D</h3>
+							</div>
+							<div class="three-d__transform scale3d">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="three-d__img">
+								<h3>scale3D</h3>
+							</div>
+							<div class="three-d__transform rotate3d">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="three-d__img">
+								<h3>rotate3D</h3>
+							</div>
+							
+							<!-- Iз-за цього backfase я не можу прибрати назви класів в css  "three-d__img", щоб просто звернутись до img, бо тоді цей лист зникає повністю, а коли я залишаю класи, то тільки ваш валідатор вказує на помилку, бо використовую клас, яий стоїть першим, а не другим, причому в самому .backface немає three-d__img... не знаю, як це поєднати-->
+							
+							<div class="three-d__transform backface">
+								<div class="backface__front">
+									<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="backface__img">				
+								</div>
+								<div class="backface__back">
+									<h3>backface</h3>
+									<img src="img/images_content/claber_back.png" alt="лепрекон на чотирилисній конюшині" class="backface__images-back">				
+								</div>
+							</div>
+
+
+							<div class="three-d__transform matrix3d">
+								<img src="img/images_content/claber.png" alt="чотирилистна конюшина" class="three-d__img">
+								<h3>matrix3D</h3>
+							</div>
+						</div>
+					</div>					
+				</div>
+
+				
+				<div class="car" id="car">
+					<div class="car__container">
+						<h2>Машина ГАЗ АА"Полуторка"<br>1932-1950 рр.</h2>
+						
+						<div class="car__wheel wheel">
+							<div class="wheel__front"></div>
+							<div class="wheel__front wheel__front--back"></div>
+						</div>
+
+						<div class="car__exhaust exhaust">
+							<div class="exhaust__items"></div>
+							<div class="exhaust__items exhaust__items--big"></div>
+							<div class="exhaust__items exhaust__items--small"></div>
+							<div class="exhaust__items exhaust__items--long"></div>
+							<div class="exhaust__items exhaust__items--narrow"></div>
+						</div>
+
+						<div class="car__bottom bottom">
+							<div class="bottom__basis"></div>
+							<div class="bottom__basis bottom__basis--up "></div>
+							<div class="bottom__clasp clasp">
+								<ul class="clasp__list">
+									<li class="clasp__item"></li>
+									<li class="clasp__item"></li>
+									<li class="clasp__item"></li>
+									<li class="clasp__item"></li>
+								</ul>
+							</div>							
+						</div>
+
+						<div class="car__quarrel quarrel">						
+							<ul class="quarrel__list">
+								<li class="quarrel__item"></li>
+								<li class="quarrel__item"></li>
+								<li class="quarrel__item"></li>					
+							</ul>
+						</div>						
+
+						<div class="car__body body-car">
+							<div class="body-car__bottom"></div>
+							<div class="body-car__bottom body-car__bottom--up">хліб</div>
+							<div class="body-car__bottom body-car__bottom--roof"></div>
+							<div class="body-car__bottom body-car__bottom--molding"></div>
+						</div>	
+
+						<div class="car__hood hood">
+							<div class="hood__basis"></div>
+							<div class="hood__basis hood__basis--horizontal"></div>
+							<div class="hood__basis hood__basis--vertical"></div>
+							<div class="hood__basis hood__basis--molding-up"></div>
+							<div class="hood__basis hood__basis--pipka"></div>
+							<div class="hood__basis hood__basis--insert"></div>
+							<div class="hood__basis hood__basis--visor"></div>
+							<div class="hood__basis hood__basis--blowing"></div>
+							<div class="hood__basis hood__basis--molding-down"></div>
+
+							<!-- Упс, пізно дійшло зробити молдінг як елемент і модифікатор, все почалось рушитись, тож залишила два мод.від основного елемента... далі теж такі багі... а ще не вирішила, чи будуть відчиняться двері чи ні, тож однакові елементи типу молдінгів промальовані не одним довгим, а на кожному блоці окремо-->
+							
+
+							<div class="hood__radiator radiator">
+								<ul class="radiator__list">
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+                                    <li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+                                    <li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+                                    <li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+                                    <li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+                                    <li class="radiator__item"></li>
+									<li class="radiator__item"></li>
+                                    <li class="radiator__item"></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="car__headlight headlight">
+							<div class="headlight__body"></div>
+							<div class="headlight__body headlight__body--lens"></div>					
+						</div>
+
+						<div class="car__wing wing">
+							<div class="wing__rim"></div>
+							<div class="wing__rim wing__rim--middle"></div>
+							<div class="wing__under "></div>
+							<div class="wing__step"></div>
+							<div class="wing__step wing__step--stool"></div>
+							<div class="wing__step wing__step--stool"></div>
+							<div class="wing__platform-step"></div>
+						</div>
+
+						<div class="car__cabin cabin">
+							<div class="cabin__door"></div>
+							<div class="cabin__door cabin__door--window"></div>
+							<div class="cabin__molding"></div>
+							<div class="cabin__molding cabin__molding--down"></div>
+							<div class="cabin__molding cabin__molding--up"></div>
+							<div class="cabin__handle"></div>
+							<div class="cabin__handle cabin__handle--rect"></div>
+							<div class="cabin__loop"></div>
+							<div class="cabin__loop cabin__loop--down"></div>
+							<div class="cabin__loop cabin__loop--up"></div>
+							<div class="cabin__mirror"></div>
+							<div class="cabin__mirror cabin__mirror--body"></div>		
+						</div>
+
+						<div class="car__corps-cabin  corps">
+							<div class="corps__insert"></div>
+							<div class="corps__back"></div>
+							<div class="corps__back corps__back--up"></div>
+							<div class="corps__back corps__back--roof"></div>
+							<div class="corps__visor"></div>
+							<div class="corps__molding"></div>
+							<div class="corps__molding corps__molding--down"></div>		
+						</div>
+
+						<div class="car__bridge"></div>
+						<div class="car__screed"></div>
+						<div class="car__screed car__screed--before"></div>
+						<div class="car__rack"></div>
+						<div class="car__tow-bar"></div>
+						<div class="car__tow-bar car__tow-bar--body"></div>
+						<div class="car__rear-arch"></div>
+					</div>					
+				</div>			
+		    </main>
+
+			<footer>
+				<div id="footer" class="footer">
+					<div class="footer__container">
+						<a href="#logo" class="footer__link">Урок 11,  Осінь 2024</a>
+					</div>
+				</div>
+			</footer>
+		</div>	    
+	</body>
+	</html>
