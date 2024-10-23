@@ -68,6 +68,7 @@ margin-block-end: 5px;
 .homework__subtitle:hover{
 color: rgb(230, 189, 99);
 text-shadow: 1px 1px 1px rgb(8, 8, 8);
+transition: all 0.5s ease;
 }
 
 .homework__container{
@@ -83,6 +84,7 @@ text-shadow: 1px 1px 1px rgb(8, 8, 8);
 }
 
 .homework__subtitle{
+    transition: color 0.5s ease, text-shadow 0.5s ease;
     margin-block-end: 50px; 
 }
 
