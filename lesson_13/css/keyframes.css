@@ -1,0 +1,8 @@
+@keyframes glow {
+    0% {
+        border-image-source: linear-gradient(90deg, transparent, #EF6D58, transparent);
+    }
+    100% {
+        border-image-source: linear-gradient(450deg, transparent, #EF6D58, transparent);
+    }
+}
