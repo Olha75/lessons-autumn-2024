@@ -91,7 +91,6 @@ transition: all 0.5s ease;
 
 .homework__subtitle{
     transition: color 0.5s ease, text-shadow 0.5s ease;
-    margin-block-end: 50px; 
 }
 
 
@@ -299,16 +298,19 @@ transition: all 0.5s ease;
 
 .contact__container{
     background-color: #FDF0E9;
-    padding-block: 92px 64px;
-    padding-inline: 100px;
     border-radius: 6px;
-    justify-content: flex-start;
     text-align:left;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    padding-inline: 100px 83px;
 }
 
 .contact__content{
     max-inline-size: 248px;
+    padding-block: 74px;
 }
 
 .contact__subtitle{
@@ -335,35 +337,58 @@ transition: all 0.5s ease;
     box-shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
 }
 
-.contact__images{
+.contact__gift{
     position: absolute;
+    top: 0;
+    left: 7.1795%; /* 84/1170 */
+    transform: translateY(-50%);
+    inline-size: 148px;
+    block-size: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__gift::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background: url("../img/images_content/star.svg") center / contain no-repeat;
+    animation: spin 60s linear infinite;
+     /* ну дуже вже захотілося приліпити сюди цю тінь */
+    filter: drop-shadow(2px 2px 3px rgba(52, 50, 50, 0.544));
+   
 }
 
 .img-gift{
-    top:0;
-    margin-block-start: -75px;
+    position: relative;
+    z-index: 2;
+    max-inline-size: 32px;
+}
+
+.contact__mails{
+    position: relative;
+    flex-basis: 338px;
+    padding-bottom: 16px; 
 }
 
 .img-mail{
-    top:80px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
     box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
-    border-radius:6px;
-    max-inline-size: 338px;
-    flex-shrink: 0;
-    position: absolute;
-    z-index: 10;
 }
 
 .contact__mails::before{
     content:"";
     position: absolute;
-    top: 96px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    inline-size:274px;
-    block-size: 176px;
+    top: 16px;
+    left:32px;  
+    inline-size:calc(100% - 64px);
+    block-size: calc(100% - 16px);
     box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
     background-color: #ffffff;
     border-radius:6px;
@@ -373,29 +398,38 @@ transition: all 0.5s ease;
 .contact__mails::after{
     content:"";
     position: absolute;
-    top: 88px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    inline-size:306px;
-    block-size: 176px;
+    top: 8px;
+    left: 16px;
+    inline-size:calc(100% - 32px);
+    block-size: calc(100% - 16px);
     box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
     background-color: #ffffff;
     border-radius:6px;
     z-index: 2;    
 }
 
+.contact__woman{
+    position: relative;
+    flex-basis: 294px;
+    align-self: flex-end;
+    padding-inline-start: 53px; 
+    margin-block-start: -60px;  
+}
+
 .contact__woman::before{
-    content:url("../img/images_content/cloud.svg");
+    content:"";
     position: absolute;
-    top: 47px;
-    right: 96px;    
-    inline-size: 282px;
+    left:0;    
+    bottom: 11.8687%;
+    inline-size:  calc(100% + 43px);
+    block-size: 61.1111%;
+    background: url("../img/images_content/cloud.svg") left center / contain no-repeat;
 }
 
 .img-woman{
-    bottom:0;
-    right: 83px;
-    max-inline-size: 239px;
+    position: relative;
+    z-index: 2;
+    max-inline-size: 100%;
 }
 
 .portfolio__calendar {
@@ -603,8 +637,8 @@ transition: all 0.5s ease;
 
 
 .item-team__images {
-    max-inline-size: 270px;
-    max-block-size: 247px;
+    max-inline-size: 100%;
+    /* max-block-size: 247px; */
 }
 
 .item-team__profession {
@@ -679,7 +713,7 @@ transition: all 0.5s ease;
 .content-founder__right-side {
     display: flex;
     flex-direction: column;
-    max-inline-size:470px ;
+    flex-basis:470px ;
     justify-content: center;   
     background: url("../img/images_content/quotes.svg");
     background-repeat: no-repeat;

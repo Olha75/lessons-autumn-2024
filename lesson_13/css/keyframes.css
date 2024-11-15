@@ -6,3 +6,10 @@
         border-image-source: linear-gradient(450deg, transparent, #EF6D58, transparent);
     }
 }
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
