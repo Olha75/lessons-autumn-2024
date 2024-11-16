@@ -258,7 +258,7 @@ border-color: transparent;
     display: flex;
     align-items: flex-start;
     gap: 50px;
-    flex: 1 0 0; 
+    /* flex: 1 0 0;  */
     inline-size: 100%;
     flex-wrap: wrap;
 }
@@ -267,7 +267,7 @@ border-color: transparent;
     display: flex;
     flex-direction: column;
     gap:16px;
-    flex-basis: 47.10%; /* Якщо тут вказую flex-basis все сиплеться*/
+    flex-basis: 47.10%; 
 }
 
 .group__label,
@@ -286,7 +286,7 @@ border-color: transparent;
 }
 
 .group--textarea {
-    inline-size: 100%;
+    flex-basis: 100%;
 }
 
 .textarea{
