@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600&display=swap");
+
+@import url("reset.css");
+@import url("keyframes.css");
+
+/* 
+@import url("fonts.css"); */
+
+body{
+    font-family: "Work Sans", sans-serif;
+    position: relative;
+}
+
+.wrapper{
+    min-block-size: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > main{
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 600px;
+	margin-inline: auto; 
+    padding-inline: 20px; 
+}
+
+/* ----------Практика---------- */
+.header{
+    background-color: rgb(98, 98, 159);
+    color: aliceblue;
+    margin-block-end: 1.25%;
+    padding: 1.25%;
+    position: sticky;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: 100;
+}
+
+.header__menu{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header__list{
+    display: inline-block;    
+}
+
+.header img{
+    margin-inline-end: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list-header{
+    vertical-align: middle;
+}
+
+.list-header__item:not(:last-child){
+margin-block-end: 5px;
+}
+
+.list-header__item a:visited{
+    color: rgb(8, 8, 8);
+    text-shadow:1px 1px 1px rgb(230, 189, 99);
+}
+
+.list-header__item:hover,
+.homework__subtitle:hover{
+color: rgb(230, 189, 99);
+text-shadow: 1px 1px 1px rgb(8, 8, 8);
+transition: all 0.5s ease;
+}
+
+.homework__container{
+    padding: 2.08%;
+}
+
+.homework__title,
+.homework__subtitle{
+    text-align: center;
+    font-size: 25px;
+    color:rgb(98, 98, 159);
+    letter-spacing:2px ;
+}
+
+.homework__subtitle{
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+
+/*----------Дз макет №1----------*/
+
+.personal {
+    padding-block: 20px;
+}
+
+.personal__container {
+    color:#87909D;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.33; /* 133.333% */
+    border-radius: 15px;
+    box-shadow: 0px 59px 124px 0px rgba(0, 0, 0, 0.12);
+    padding-block: 30px 50px;
+}
+
+.personal__title{
+    margin-block-end: 50px;
+}
+
+.personal__form {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.form__input{
+    inline-size: 100%;
+    border-bottom: 1.5px solid #E6E8EB;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding-block-end: 14px;
+    color: #697484;
+    resize: vertical;
+    border-top-right-radius:4px ;
+    border-bottom-right-radius:4px ;
+    transition: border-color 0.7s ease;  
+    padding-inline: 10px;
+}
+
+.form__list:last-child{
+    margin-block-end: 50px;
+}
+
+.form__input::placeholder{
+    color: #697484;  
+}
+
+.form__input:hover::placeholder,
+.form__input:hover{
+    color:#A53DFF;
+    border-color: #A53DFF;
+    transition: all 0.7s ease;
+}
+
+.form__input:focus::placeholder,
+.form__input:focus,
+.button__form:focus{
+    color:#A53DFF;   
+    background-color: #caa3ec41;
+    outline: none;
+    background: linear-gradient(135deg, #ff9a9d42, #fad0c443, #fbc2eb45, #a1c4fd3e, #c2e9fb41, #d5fc793c, #96e6a13c);
+background-size: 300% 300%;
+animation: gradient 10s ease infinite;
+border-color: transparent;
+}
+
+.button__form:focus{
+    border:1px solid #A53DFF;
+    color:#edae38;
+}
+
+.form__cash{
+    display: flex;
+    gap:24px;
+}
+
+.input-budget{
+    flex-basis:37.31%;
+}
+
+.input-subject{
+    flex-basis:62.68%;
+}
+
+.form__buttons{
+    display: flex;
+    gap:24px;
+
+}
+
+.button__form{
+    display: inline-flex;
+    background-color: #A53DFF;
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.5; /* 150% */
+    position: relative;
+    cursor: pointer;
+    gap: 12px;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.button__img{
+    display: inline-block;
+    inline-size: 24px;
+    block-size: 24px;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.button__form--reset{
+    background-color: transparent;
+    border:1px solid  #A53DFF;
+    color: #A53DFF;
+}
+
+/* #submit:active .button__img{
+    animation: fly-away 1s ease-in-out forwards;
+}  */
+
+.button__form:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.button__form:active{
+    background-color: #290847;
+    transition: background-color 0.5s ease;
+}
+
+
+
+
+/*----------Дз макет №2----------*/
+
+.dark {
+    background-color: #141414;
+    padding-block: 30px 50px;
+}
+
+.dark__container {
+    max-inline-size: 976px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: #0F0F0F;
+    display: flex;
+    padding:50px;
+    flex-direction: column;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color:#999999; 
+    text-transform: capitalize;    
+}
+
+.form-dark {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    flex: 1 0 0; 
+    inline-size: 100%;
+    flex-wrap: wrap;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    inline-size: 47.14%; /* Якщо тут вказую flex-basis все сиплеться*/
+}
+
+.group__label,
+.form-dark__button{
+    color: #FFF;
+    font-weight: 600;
+}
+
+.group__input {    
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #262626 ;
+    background: #141414;
+    resize: vertical;
+    transition: border-color 0.7s ease; 
+}
+
+.group--textarea {
+    inline-size: 100%;
+}
+
+.textarea{
+    min-block-size: 163px;
+}
+
+.group__input::placeholder{
+    text-transform: capitalize;
+}
+
+#email::placeholder,
+#id::placeholder,
+.checkbox__label{
+    text-transform: none;
+}
+
+.group__input:hover{
+    border-color:#FF9999;
+    transition: border-color 0.7s ease; 
+}
+
+.group__input:focus{
+    border-color:#FF9999;
+    transition: border-color 0.7s ease; 
+    outline: none;
+    background-color:#FFE5E5 ;
+    color: #0F0F0F;
+}
+
+.checkbox__input{
+    appearance: none;   
+}
+
+.checkbox__label{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-start: -18px; 
+}
+
+.checkbox__label::before {
+    content: "";
+    flex-shrink: 0;
+    inline-size: 28px;
+    block-size: 28px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+    border: 1px solid #262626;
+    background-color: #0F0F0F;  
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+    background:#FF9999
+    url("../img/images_content/check-mark-button.svg") center /
+    contain no-repeat;
+    transition: all 0.5s ease;
+}
+
+.checkbox__link:hover{
+text-decoration: underline;
+text-decoration-color: #ffffff;
+}
+
+.form-dark__button{
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+    background:  #E50000;
+    padding: 18px 24px;
+    inline-size: fit-content;
+    margin-left: auto;
+    align-items: center;
+    position: relative;
+    overflow: clip;
+}
+
+.form-dark__button:hover::before {
+    left: 100%; 
+}
+
+.form-dark__button::before {
+    content: "";
+    position: absolute;
+    top:0; 
+    left: -50%; 
+    inline-size: 30%;
+    block-size: 200%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.6));
+    transform: skew(-30deg); 
+    transition: transform 1s ease, left 0.8s ease;
+}
+
+.form-dark__button:active {
+    background:  #6d0a0a;
+    box-shadow: 1px 1px 5px #ffffff;
+    color:#E50000;
+}
+
+
+
+
+/* ----------Footer---------- */
+.footer{
+    padding: 15px;
+    text-align: center;
+    background-color: #5D6970;
+    
+}
+
+.footer a{
+    color:#dddbec;
+    font-size: 14px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>lesson_14</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__menu">
+						<img src="img/logo.jpg" alt="logo" id="logo" class="header__logo">
+						<ul class="header__list list-header">
+							<li class="list-header__item"><a href="#personal-portfolio" class="list-header__link">Макет PersonalPortfolio</a></li>
+							<li class="list-header__item"><a href="#dark-theme" class="list-header__link">Макет DarkThemeWebsite</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<div class="homework">
+					<div class="homework__container">
+						<h1 class="homework__title">Домашня робота №14</h1>
+						<h2 class="homework__subtitle">HTML Форми</h2>
+					</div>
+				</div>
+
+				<div class="personal" id="personal-portfolio">
+					<div class="personal__container">
+						<p class="personal__title" tabindex="-1">There are many variations of passages of Lorem Ipsu available,
+							but the majority have suffered alte.</p>
+						<form class="personal__form form" enctype="multipart/form-data" action="#">
+							
+								<input name="form[]" placeholder="Name*" required class="form__input" type="text" tabindex="1">
+
+								<input name="form[]" placeholder="Email*" required class="form__input" type="email" tabindex="2">
+
+								<input name="form[]" placeholder="Location" class="form__input" type="text" tabindex="3">
+
+								<div class="form__cash">
+									<input name="form[]" placeholder="Budget*" required class="form__input input-budget" type="number" tabindex="4">
+									<input name="form[]" placeholder="Subject*" required class="form__input input-subject" type="text" tabindex="5">
+								</div>
+
+								<textarea placeholder="Message*" required  name="form[]" minlength="20"  maxlength="200" class="form__input" tabindex="6"></textarea>
+							
+
+								<div class="form__buttons button">
+
+									<!-- Не втрималась, поекспериментувала -->
+									<button class="button__form  button__form--reset" tabindex="7" type="reset">Reset						
+								    </button>
+		
+								    <button class="button__form" tabindex="8" type="submit" id="submit">Submit
+										<span>
+											<img src="img/images_content/icon__button.svg" alt="іконка літака" class="button__img">
+								        </span>
+								    </button>						
+								</div>
+						</form>
+						
+					</div>
+				</div>
+
+
+
+
+				<div class="dark" id="dark-theme">
+					<div class="dark__container">
+						
+						<form class="dark__form form-dark" enctype="multipart/form-data" action="#">
+							<div class="form-dark__group group">
+								<label class="group__label" for="name">First Name</label>							
+								<input name="form[]" placeholder="Enter First Name" required class="group__input" type="text" tabindex="9" id="name">
+							</div>
+
+							<div class="form-dark__group group">
+								<label class="group__label" for="last-name">Last Name</label>
+								<input name="form[]" placeholder="Enter Last Name" required class="group__input" type="text" tabindex="10" id="last-name">
+							</div>
+
+							<div class="form-dark__group group">	
+								<label class="group__label" for="email">Email</label>
+								<input name="form[]" placeholder="Enter your Email" class="group__input" type="email" tabindex="11" id="email">
+							</div>
+
+							<div class="form-dark__group group">
+								<label class="group__label" for="phone">Phone Number</label>
+								<input name="form[]" placeholder="Enter Phone Number" class="group__input" type="tel" tabindex="12"  id="phone" minlength="12">
+							</div>
+							
+							<div class="form-dark__group group group--textarea">
+								<label class="group__label" for="message">Message</label>
+								<textarea placeholder="Enter your Message"  class="group__input textarea"  tabindex="13" id="message" autocomplete="off" name="form[]"></textarea>
+							</div>						
+
+							<div class="form-dark__checkbox checkbox">		
+								<input id="checkbox" class="checkbox__input" required checked name="checkbox"  type="checkbox" tabindex="14">
+								<label class="checkbox__label" for="checkbox">
+									<a href="#" target="_blank" class="checkbox__link">I agree with Terms of Use and Privacy Policy</a>
+								</label>				
+							</div>
+
+							<button class="form-dark__button" tabindex="15" type="submit">Send Message								
+							</button>							    					
+								
+						</form>						
+					</div>
+				</div>		
+		    </main>
+
+			<footer>
+				<div id="footer" class="footer">
+					<div class="footer__container">
+						<a href="#logo" class="footer__link" tabindex="16">Урок 14,  Осінь 2024</a>
+					</div>
+				</div>
+			</footer>
+		</div>	    
+	</body>
+	</html>
