@@ -267,7 +267,7 @@ border-color: transparent;
     display: flex;
     flex-direction: column;
     gap:16px;
-    inline-size: 47.14%; /* Якщо тут вказую flex-basis все сиплеться*/
+    inline-size: 47.10%; /* Якщо тут вказую flex-basis все сиплеться*/
 }
 
 .group__label,
