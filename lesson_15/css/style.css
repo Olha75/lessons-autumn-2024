@@ -28,7 +28,7 @@ body{
 [class*="__container"] {
 	max-inline-size: 1200px;
 	margin-inline: auto; /* те що раніше margin:0 auto; для центрування. */
-    padding-inline: 15px; /*1.25%*/ 
+    padding-inline: 15px;  
 }
 
 
@@ -190,9 +190,6 @@ margin-block-end: 5px;
     gap:30px;
     row-gap: 32px;
     margin-block-end: 64px; /*5.33%*/
-
-    /* flex:1 1 1170px; */
-
 }
 
 .card__box {
@@ -224,13 +221,11 @@ margin-block-end: 5px;
 
 .card__box:nth-child(4n+2),
 .card__box:nth-child(4n+3){
-    
     aspect-ratio: 670 / 416;
 } 
 
 @media (any-hover: hover){
     .card__box:hover .card__images{
-        /* background-color: transparent; */
         transform: scale(1.2);
         transition: all 0.5s ease;
     }
@@ -264,6 +259,7 @@ margin-block-end: 5px;
     padding-inline:16px 15px;
     padding-block: 5px 1px;
     line-height: 2; /* 200% */
+    cursor: pointer;
     color: #391400;
     transition: background-color 0.5s ease;
 }
@@ -296,15 +292,11 @@ margin-block-end: 5px;
 
 .card__images {
     position: absolute;
-    /* top: 0; */
-    /* left: 0; */
     max-inline-size: 100%;
     object-fit: cover;
     aspect-ratio: 470 / 416;
-    /* block-size: 100%; */
     border-radius: 6px;
     transition: all 0.5s ease;
-
 }
 
 .button{
@@ -343,21 +335,11 @@ margin-block-end: 5px;
     gap: 30px;
     align-items: center;
     padding-inline: 100px 83px;
-
-
-    /* flex:1 1 1170px; */
 }
 
 
 
-                     
-
-
-
                     @media (min-width:799px) and (max-width: 998.98px){
-                        /* .contact__container{
-                            flex-wrap: wrap;
-                        } */
                         .contact__mails{
                             display:none;
                         }
@@ -417,7 +399,6 @@ margin-block-end: 5px;
     block-size: 100%;
     background: url("../img/images_portfolio/star.svg") center / contain no-repeat;
     animation: spin 60s linear infinite;
-     /* ну дуже вже захотілося приліпити сюди цю тінь */
     filter: drop-shadow(2px 2px 3px rgba(52, 50, 50, 0.544));
 }
 
@@ -427,6 +408,8 @@ margin-block-end: 5px;
     max-inline-size: 32px;
 }
 
+
+
                     @media (max-width: 798.98px) {
                         .contact__woman{
                             display: none;
@@ -434,26 +417,19 @@ margin-block-end: 5px;
                         .contact__container{
                             flex-wrap: nowrap;
                         }
-
                         .contact__content {
                             padding-block-end: 30px;
                         }
-
                         .portfolio__work{
                             padding-block: 60px;
                         }
                     }
 
 
-
-
-
-
                     @media (max-width: 659.98px) {
                         .contact__mails{
                             display: none;
                         }
-
                         .list{
                             gap: 15px;
                             row-gap: 10px;
@@ -461,78 +437,49 @@ margin-block-end: 5px;
                             flex-wrap: wrap;
                             margin-block-end: 30px;
                         }
-
                         .title{
                             font-size: 39px;
                             margin-block-end: 30px;
                         }
-                        
-                        .calendar__title{
-                            /* margin-block-end: 30px; */
-                        }
-
-
-
-                    }
-                    
-
-
-
-
+                    }                   
 
 
                     @media (min-width: 502px) and (max-width: 659.98px) {       
                         .contact__content {
                             display: flex;
-                            justify-content: space-between; /* Розкидує текст і кнопку */
-                            align-items: center; /* Вирівнює по вертикалі */
-                            gap: 20px; /* Простір між текстом і кнопкою */
-                            max-inline-size: 500px; /* Займає всю ширину контейнера */
+                            justify-content: space-between; 
+                            align-items: center; 
+                            gap: 20px;
+                            max-inline-size: 500px;
                         }
-
-                        .contact__content > div {
-                            flex: 1; /* Текст займає всю доступну ширину */
-                            margin-right: 20px; /* Додатковий відступ від кнопки */
+                            .contact__content > div {
+                            flex: 1; 
+                            margin-right: 20px; 
                         }
 
                         .button--red {
-                            flex-shrink: 0; /* Залишається фіксованого розміру */
-                            inline-size: fit-content; /* Розмір кнопки відповідає її тексту */
+                            flex-shrink: 0;
+                            inline-size: fit-content;
                         }
-
                         .contact__text-title{
                             margin-block-end: 0;
                         }
                     }
 
 
-
-
-
-
-
-                   
-
-
                     @media (max-width: 501.98px){
                         .button{
                         padding: 15px 20px;
                         }
-
                         .content-card{
                             padding-inline:28px;
                         }
-
-
                         .card__box{
                             min-height: 416px;
                         }
-
                         .card__images{
                             min-height: 416px;
                         }
-
-
                         .card{
                             margin-block-end: 48px;
                         }
@@ -674,7 +621,6 @@ margin-block-end: 5px;
     text-align: left;
     align-items: center;
     line-height: 2.0; /* 200% */
-
 }
 
 .term__time::before{
@@ -813,7 +759,6 @@ margin-block-end: 5px;
 
 .item-team__images {
     max-inline-size: 100%;
-    /* max-block-size: 247px; */
 }
 
 .item-team__profession {
@@ -836,7 +781,6 @@ margin-block-end: 5px;
     transition: background-color 0.3s ease-in;
 }
 
-
 @media (any-hover: hover){
     .arrow__box:hover,
     .circles__item:hover{
@@ -852,7 +796,6 @@ margin-block-end: 5px;
     border-color: transparent;
     transition: background-color 0.5s ease-out;
     }
-
 
 .arrow__box:active,
 .circles__item:active{
@@ -913,7 +856,7 @@ margin-block-end: 5px;
 .subtitle--margin{
     margin-block-end: 33px;
 }
-    
+
 .title--size{
     font-size: 40px;
     letter-spacing: -1px;
@@ -941,54 +884,51 @@ margin-block-end: 5px;
 
 
 
+                    @media  (max-width: 1199.98px){                            
+                        .list-calendar{
+                            justify-content: center;
+                            margin-block-end: 48px;
+                        }
+                        .content-founder{
+                            gap:20px;
+                        }
+                        .title--size{
+                            font-size: 35px;
+                        }
+                    }
 
 
-@media  (max-width: 1199.98px){                            
-    .list-calendar{
-        justify-content: center;
-        margin-block-end: 48px;
-    }
+                    @media(max-width: 999.98px){
+                        .content-founder{
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap:0;
+                        }
+                        .title--size{
+                            font-size:25px;
+                        }
+                        .content-founder__right-side{
+                            background-position: right 0 top 75px;
+                            padding-block: 0;
+                        }
+                        .founder{
+                            padding-block: 30px;
+                        }
+                    }
 
-    .content-founder{
-        gap:20px;
-    }
 
-    .title--size{
-        font-size: 35px;
-    }
-}
-
-@media(max-width: 999.98px){
-    .content-founder{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:0;
-    }
-
-    .title--size{
-        font-size:25px;
-    }
-
-    .content-founder__right-side{
-        background-position: right 0 top 75px;
-        padding-block: 0;
-    }
-
-    .founder{
-        padding-block: 30px;
-    }
-}
-
-@media (max-width: 615.98px) {
-    .contact__text-title{
-        font-size: 18px;
-    }
-
-    .arrow{
-        display: none;
-    }
-}
+                    @media (max-width: 615.98px) {
+                        .contact__text-title{
+                            font-size: 18px;
+                        }
+                        .arrow{
+                            display: none;
+                        }
+                        .founder{
+                            padding-block: 0px;
+                        }
+                    }
 
 
 
@@ -1004,7 +944,6 @@ margin-block-end: 5px;
         background-color: #141414;        
     }
 
-
 .dark__container {
     display: flex;
     flex-direction:column;
@@ -1018,11 +957,9 @@ margin-block-end: 5px;
 
 .movies__cards{
     display: flex;
-    flex-grow: 1 1 1;
+    flex-grow: 1;
     max-inline-size: 100%;
 }
-
-
 
 .movies {
     border-bottom-left-radius: 12px;
@@ -1032,7 +969,6 @@ margin-block-end: 5px;
     padding-block-end: 50px;
     padding-block-start: 100px;
     padding-inline: 50px;
-    /* margin-block-end:150px; */
 }
 
 .header-section {
@@ -1050,7 +986,6 @@ margin-block-end: 5px;
 }
 
 .header-section__scroll {
-    /* max-inline-size: 257px; */
     inline-size: fit-content;
     border-radius: 12px;
     border: 1px solid #1F1F1F;
@@ -1126,29 +1061,15 @@ margin-block-end: 5px;
     transition: all 0.3s ease-in-out;
 }
 
-
-/* --------card */
-
 .cards {
     display: flex;
     gap:20px;
     max-width: 100%;
 }
 
-
-
-
-
-
-
-
 .item {
     display: flex;
-
     flex:1 1 359.5px;
-
-
-    /* max-inline-size: 359.5px; */
     padding: 20px;
     border-radius: 12px;
     border: 1px solid  #262626;
@@ -1225,11 +1146,6 @@ transition: transform 0.7s ease-in-out;
     justify-content: space-between;
 }
 
-
-
-
-
-
 .genres {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1288,7 +1204,6 @@ transition: transform 0.7s ease-in-out;
     aspect-ratio: 215.4 / 252;
     position: relative;
     transition: all 0.3s ease-in-out; 
-    /* width: 100%; */
     justify-content: center;
     flex-wrap: wrap;  
 }
@@ -1333,101 +1248,84 @@ transition: transform 0.7s ease-in-out;
     font-weight: 600;
 }
 
-
-@media(max-width: 1245px){
-    .cards--gap {
-        gap: 20px;
-    }
-}
-
-
-@media(max-width: 1193px){
-    .cards--gap {
-        gap: 10px;
-    }
-
-    .cards {
-    flex-wrap: wrap;
-    }
-
-   
-}
+                    @media(max-width: 1245px){
+                        .cards--gap {
+                            gap: 20px;
+                        }
+                    }
 
 
-
-@media(max-width: 1000px){
-    .cards{
-        flex-wrap: wrap;
-    }
-}
-
-@media(max-width:874px){
-    .header-section__title{
-    font-size: 30px;
-    }
-
-    .scroll__lines{
-        display: none;
-    }
-}
-
-@media(max-width: 712px) {
-    .genres{
-        padding: 35px;
-    }
-
-    .movies{
-        padding: 35px;
-    }
+                    @media(max-width: 1193px){
+                        .cards--gap {
+                            gap: 10px;
+                        }
+                    }
 
 
+                    @media (min-width:711.98px) and (max-width: 1193px){                 
+                        .cards {
+                        flex-wrap: wrap;
+                        }   
+                    }
 
 
-    .cards--gap {
-        display: flex;
-        flex-wrap: nowrap; /* Забезпечує один рядок */
-        justify-content: space-between; /* Розподіляє картки рівномірно */
-        gap: 10px; /* Проміжок між картками */
-        
-    }
-
-    .item {
-        flex: 0 0 auto; /* Фіксує ширину карток */
-        max-inline-size: calc(100% / 2 - 10px); /* Зменшує розмір картки, щоб вони помістилися */
-    }
-
-    .pazl {
-        flex-direction: column; /* Упорядковує елементи всередині картки у колонку */
-    }
-
-}
+                    @media(max-width:874px){
+                        .header-section__title{
+                        font-size: 30px;
+                        }
+                        .scroll__lines{
+                            display: none;
+                        }
+                        .dark__container{
+                            gap:100px;
+                        }
+                    }
 
 
-@media(max-width:449.98px ){
-    .header-section{
-    justify-content: start;
-    gap: 25px;
-    }
+                    @media(max-width: 712px) {
+                        .genres{
+                            padding-inline: 35px;
+                        }
+                        .movies{
+                            padding: 35px;
+                        }
+                        .cards--gap {
+                            flex-wrap: nowrap;
+                            justify-content: space-between;
+                            gap: 10px; 
+                        }
+                        .item {
+                            flex: 0 0 auto;                            
+                        }
+                        .pazl {
+                            flex-direction: column;
+                        }
+                    }
 
 
-}
+                    @media(max-width:449.98px ){
+                        .header-section{
+                            justify-content: start;
+                            gap: 25px;
+                        }
+                    }
 
 
-@media(max-width: 520px) {
- 
-
-    .item {
-        flex: 0 0 auto; /* Фіксує ширину карток */
-        max-inline-size: 185px;
-    }
-
-    .header-section__title {
-        font-size: 25px;
-
-
-}
-
-
+                    @media(max-width: 520px) {
+                        .item {
+                            flex: 0 0 185px;
+                            gap:5px;
+                        }
+                        .header-section__title {
+                            font-size: 25px;
+                        }
+                        .item__img-card {
+                            margin-block-end: 0px;
+                        }
+                        .dark__container{
+                            gap:50px;
+                        }
+                    }
 
 
 
