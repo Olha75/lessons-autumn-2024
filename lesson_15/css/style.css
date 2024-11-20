@@ -1086,6 +1086,17 @@ margin-block-end: 5px;
     margin-block-end:20px;   
 }
 
+
+@media (any-hover: hover){
+    .item:hover {
+        transform: scale(1.1); 
+        box-shadow: 1px 1px 20px #999999;   
+        transition: all 0.3s ease-in-out;      
+    }
+}
+
+
+
 .info {
     display: flex;
     justify-content: space-between;
