@@ -711,6 +711,12 @@ margin-block-end: 5px;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color: #B550F8  #ef6c580a;
+    scrollbar-width: thin;
+}
+
+.lt::-webkit-scrollbar-track{
+    margin-block-start: 10px;
+    border-radius: 10px;
 }
 
 .item-team {
@@ -1071,7 +1077,16 @@ margin-block-end: 5px;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color: #EF6D58  #9999990b;
+    scrollbar-width: thin;
 }
+
+.cards::-webkit-scrollbar-track{
+    margin-block-start: 10px;
+    border-radius: 10px;
+}
+
+
+
 
 .item {
     display: flex;
