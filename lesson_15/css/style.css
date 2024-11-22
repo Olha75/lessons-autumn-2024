@@ -708,6 +708,8 @@ margin-block-end: 5px;
     display: flex;
     margin-block-end: 52px;
     flex-wrap: nowrap;
+    overflow: auto;
+    scrollbar-color: #B550F8  #EF6D58;
 }
 
 .item-team {
@@ -1065,6 +1067,8 @@ margin-block-end: 5px;
     display: flex;
     gap:20px;
     max-width: 100%;
+    overflow: auto;
+    scrollbar-color: #EF6D58  #999999;
 }
 
 .item {
