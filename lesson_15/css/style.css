@@ -708,16 +708,17 @@ margin-block-end: 5px;
     display: flex;
     margin-block-end: 52px;
     flex-wrap: nowrap;
-    /* overflow-x: auto;
+    overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color: #B550F8  #ef6c580a;
-    scrollbar-width: thin; */
+    scrollbar-width: thin;
+    padding-block-end: 10px;
 }
 
-/* .lt::-webkit-scrollbar-track{
+.lt::-webkit-scrollbar-track{
     margin-block-start: 10px;
     border-radius: 10px;
-} */
+}
 
 .item-team {
     flex-grow: 1;
@@ -980,6 +981,7 @@ margin-block-end: 5px;
     padding-inline: 50px;
 }
 
+
 .header-section {
     display: flex;
     justify-content: space-between;
@@ -1074,16 +1076,17 @@ margin-block-end: 5px;
     display: flex;
     gap:20px;
     max-width: 100%;
-    /* overflow-x: auto;
+    overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color: #EF6D58  #9999990b;
-    scrollbar-width: thin; */
+    scrollbar-width: thin;
+    padding-block-end: 40px;
 }
-/* 
+
 .cards::-webkit-scrollbar-track{
     margin-block-start: 10px;
     border-radius: 10px;
-} */
+}
 
 
 
