@@ -1246,7 +1246,7 @@ form:invalid button {
 
 
               /* 1037.98px */
-@media(max-width:64.8738rem){
+@media(max-width:64.8738em){
     /* header */
     .hero {
         padding-block: 1rem;
@@ -1360,7 +1360,7 @@ form:invalid button {
 
 
               /* 932.99px */
-@media(max-width:58.3119rem){
+@media(max-width:58.3119em){
     /* header */
     .header__container{
         column-gap: 1.25rem;
@@ -1406,7 +1406,7 @@ form:invalid button {
 
 
                /* 861.99px */
-@media(max-width:53.8744rem){
+@media(max-width:53.8744em){
     /* header*/
     .menu__list{
         column-gap:1rem;
@@ -1463,7 +1463,7 @@ form:invalid button {
 
 
 
-@media(max-width:780.9904px){
+@media(max-width:48.8119em){
      /* header */
     .menu__list{            
         font-size: 0.875rem;
@@ -1479,7 +1479,7 @@ form:invalid button {
 
 
                 /* 740.99 */
-@media(max-width:46.3119rem){
+@media(max-width:46.3119em){
     /* header */
     .header__container{
         min-block-size: 4rem;
@@ -1601,8 +1601,8 @@ form:invalid button {
 
 
 
-
-@media(max-width:540px){
+/* 540px */
+@media(max-width:33.75em){
 
     /* process */
     .process__list{
@@ -1637,7 +1637,7 @@ form:invalid button {
 
 
              /* 440px */
-@media(max-width:27.5rem){
+@media(max-width:27.5em){
     /* header */
     .header__container{
         column-gap: 0.625rem;
@@ -1792,7 +1792,7 @@ form:invalid button {
         margin-block-start:1rem;
     }
     .services__item{
-        inline-size: 300px;
+        inline-size: 18.75rem;
         inline-size: 100%;
     }
     .services__link {
